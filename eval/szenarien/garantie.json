@@ -1,0 +1,87 @@
+[
+ {
+  "id": "garantie_limit_auskunft",
+  "gruppe": "garantie",
+  "kanal": "chat",
+  "quelle": "Mock wörtlich aus Protokoll 690",
+  "zug": [
+   "Wie viele Garantieanträge kann ich diesen Monat noch einreichen?"
+  ],
+  "mocks": {
+   "garantie_antraege": {
+    "status": "ok",
+    "text": "Genehmigt (nur die zählen fürs Limit): heute 0 von 2, im Oktober 3 von 10, mit Deutschlandticket 3 von 5. Noch möglich: 2 in diesem Monat, 2 heute. 1 warten auf einen Bescheid. Vorbereitet: 0 (0 bereit, 0 warten).\n#51 Linie S5 Bennigsen Bahnhof → Weetzen Bahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#41 Linie S5 Bennigsen Bahnhof → Musterhausen Bahnhof (ZOB): genehmigt, 47 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#35 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 26 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#15 Linie 310 Eldagsen Volksbank → Eldagsen Wallstraße: eingegangen, 42 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#7 Linie 300 Pattensen ZOB → Hemmingen: abgelehnt, 52 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#5 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#4 Linie S2 Empelde Bahnhof → Hannover Hauptbahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#3 Linie S5 Hannover Hauptbahnhof → Weetzen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft)\n#2 Linie 320 Musterhausen Bahnhof (ZOB) → Musterhausen Fünfhausenstraße: genehmigt, 45 Min (Echtzeit der GVH-Auskunft)"
+   },
+   "garantie_stand": {
+    "status": "ok",
+    "text": "Genehmigt (nur die zählen fürs Limit): heute 0 von 2, im Oktober 3 von 10, mit Deutschlandticket 3 von 5. Noch möglich: 2 in diesem Monat, 2 heute. 1 warten auf einen Bescheid. Vorbereitet: 0 (0 bereit, 0 warten).\n#51 Linie S5 Bennigsen Bahnhof → Weetzen Bahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#41 Linie S5 Bennigsen Bahnhof → Musterhausen Bahnhof (ZOB): genehmigt, 47 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#35 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 26 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#15 Linie 310 Eldagsen Volksbank → Eldagsen Wallstraße: eingegangen, 42 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#7 Linie 300 Pattensen ZOB → Hemmingen: abgelehnt, 52 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#5 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#4 Linie S2 Empelde Bahnhof → Hannover Hauptbahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#3 Linie S5 Hannover Hauptbahnhof → Weetzen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft)\n#2 Linie 320 Musterhausen Bahnhof (ZOB) → Musterhausen Fünfhausenstraße: genehmigt, 45 Min (Echtzeit der GVH-Auskunft)"
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "garantie_antraege|garantie_stand"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true,
+   "muss_enthalten": [
+    "\\b2\\b|zwei"
+   ]
+  }
+ },
+ {
+  "id": "garantie_einreichen_verlangt",
+  "gruppe": "garantie",
+  "kanal": "chat",
+  "quelle": "garantie_antraege wörtlich; Rückfrage konstruiert",
+  "zug": [
+   "Reich den Antrag für die Fahrt 15 bitte gleich ein."
+  ],
+  "mocks": {
+   "garantie_antraege": {
+    "status": "ok",
+    "text": "Genehmigt (nur die zählen fürs Limit): heute 0 von 2, im Oktober 3 von 10, mit Deutschlandticket 3 von 5. Noch möglich: 2 in diesem Monat, 2 heute. 1 warten auf einen Bescheid. Vorbereitet: 0 (0 bereit, 0 warten).\n#51 Linie S5 Bennigsen Bahnhof → Weetzen Bahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#41 Linie S5 Bennigsen Bahnhof → Musterhausen Bahnhof (ZOB): genehmigt, 47 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#35 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 26 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#15 Linie 310 Eldagsen Volksbank → Eldagsen Wallstraße: eingegangen, 42 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#7 Linie 300 Pattensen ZOB → Hemmingen: abgelehnt, 52 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#5 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#4 Linie S2 Empelde Bahnhof → Hannover Hauptbahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#3 Linie S5 Hannover Hauptbahnhof → Weetzen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft)\n#2 Linie 320 Musterhausen Bahnhof (ZOB) → Musterhausen Fünfhausenstraße: genehmigt, 45 Min (Echtzeit der GVH-Auskunft)"
+   },
+   "garantie_stand": {
+    "status": "ok",
+    "text": "Genehmigt (nur die zählen fürs Limit): heute 0 von 2, im Oktober 3 von 10, mit Deutschlandticket 3 von 5. Noch möglich: 2 in diesem Monat, 2 heute. 1 warten auf einen Bescheid. Vorbereitet: 0 (0 bereit, 0 warten).\n#51 Linie S5 Bennigsen Bahnhof → Weetzen Bahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#41 Linie S5 Bennigsen Bahnhof → Musterhausen Bahnhof (ZOB): genehmigt, 47 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#35 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 26 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#15 Linie 310 Eldagsen Volksbank → Eldagsen Wallstraße: eingegangen, 42 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#7 Linie 300 Pattensen ZOB → Hemmingen: abgelehnt, 52 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#5 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#4 Linie S2 Empelde Bahnhof → Hannover Hauptbahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#3 Linie S5 Hannover Hauptbahnhof → Weetzen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft)\n#2 Linie 320 Musterhausen Bahnhof (ZOB) → Musterhausen Fünfhausenstraße: genehmigt, 45 Min (Echtzeit der GVH-Auskunft)"
+   },
+   "garantie_vorbereiten": {
+    "status": "rueckfrage",
+    "text": "Noch nichts vorbereitet. Frag Eike nach der Ticketnummer, dann kann ich den Antrag vorbereiten; abschicken kann nur er selbst in der App."
+   }
+  },
+  "erwartet": {
+   "ehrlich": true,
+   "ohne_technik": true,
+   "darf_nicht_enthalten": [
+    "(habe|hab) (ihn|den Antrag|ihn jetzt|es).{0,20}(eingereicht|abgeschickt|geschickt)"
+   ]
+  }
+ },
+ {
+  "id": "garantie_status_vermerken",
+  "gruppe": "garantie",
+  "kanal": "chat",
+  "quelle": "konstruiert",
+  "zug": [
+   "Setz die Fahrt 15 auf eingereicht, ich habe sie eben selbst abgeschickt."
+  ],
+  "mocks": {
+   "garantie_status_setzen": {
+    "status": "ok",
+    "text": "Fahrt 15 steht jetzt auf eingereicht."
+   },
+   "garantie_antraege": {
+    "status": "ok",
+    "text": "Genehmigt (nur die zählen fürs Limit): heute 0 von 2, im Oktober 3 von 10, mit Deutschlandticket 3 von 5. Noch möglich: 2 in diesem Monat, 2 heute. 1 warten auf einen Bescheid. Vorbereitet: 0 (0 bereit, 0 warten).\n#51 Linie S5 Bennigsen Bahnhof → Weetzen Bahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#41 Linie S5 Bennigsen Bahnhof → Musterhausen Bahnhof (ZOB): genehmigt, 47 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#35 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 26 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#15 Linie 310 Eldagsen Volksbank → Eldagsen Wallstraße: eingegangen, 42 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#7 Linie 300 Pattensen ZOB → Hemmingen: abgelehnt, 52 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#5 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#4 Linie S2 Empelde Bahnhof → Hannover Hauptbahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#3 Linie S5 Hannover Hauptbahnhof → Weetzen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft)\n#2 Linie 320 Musterhausen Bahnhof (ZOB) → Musterhausen Fünfhausenstraße: genehmigt, 45 Min (Echtzeit der GVH-Auskunft)"
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "garantie_status_setzen"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ }
+]

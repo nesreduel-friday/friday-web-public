@@ -1,0 +1,6 @@
+venv/
+modelle/
+konfig.json
+overlay.log*
+__pycache__/
+.pytest_cache/

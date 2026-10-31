@@ -1,0 +1,6 @@
+.git
+.env
+data/
+docs/
+scripts/
+**/__pycache__/

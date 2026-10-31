@@ -1,0 +1,348 @@
+services:
+  friday:
+    build: .
+    image: friday-web:local
+    container_name: friday
+    restart: unless-stopped
+
+    # Gehärtet (26.09.2026, mit der vollen Suite und einem Serverstart geprüft): keine
+    # Linux-Fähigkeiten, kein Rechtegewinn über setuid, Wurzeldateisystem nur lesbar.
+    # Schreiben dürfen nur ./data und /tmp. Fällt ein Baustein damit um, zuerst
+    # nachsehen, ob er außerhalb von data/ schreibt — nicht die Härtung lockern.
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /home/friday/.cache
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    # Ein Amoklauf (Leck, Endlosschleife) soll Jellyfin & Co. auf hphome nicht mitreißen.
+    # Im Leerlauf ~130 MB; 3 GB lassen dem Buchlesen und PDF-Rendern reichlich Luft.
+    mem_limit: 3g
+    pids_limit: 512
+
+    # Nur Loopback. Nach aussen geht es ausschliesslich über
+    # `tailscale serve --bg 8124` (HTTPS) — ohne HTTPS kein Mikrofon auf iOS.
+    ports:
+      - "127.0.0.1:8124:8080"
+
+    env_file:
+      - .env
+
+    environment:
+      # Langzeitgedächtnis (Graphiti) über das interne Docker-Netz.
+      # Ohne Schrägstrich am Ende — mit leitet der Server erst per 307 um.
+      - GRAPHITI_URL=http://graphiti:8000/mcp
+      - MODEL_NAME=${GRAPH_TEXTMODELL:-gemini-3.5-flash-lite}
+      # Nur zur Anzeige im Health (Graphiti bekommt den Wert selbst, siehe Dienst graphiti).
+      - EMBEDDER_PROVIDER_GRAPHITI=${EMBEDDER_PROVIDER_GRAPHITI:-gemini}
+      # Nur lesend, für die Übersicht nach Typen auf der Gedächtnis-Seite.
+      - FALKORDB_HOST=falkordb
+      # WhatsApp über den WAHA-Container im internen Netz.
+      - WAHA_URL=http://waha:3000
+      # Minecraft-Bot: MindServer im Netz friday-mc_mcnet (siehe networks unten).
+      - MINECRAFT_BOT_URL=http://mindcraft:8080
+
+    volumes:
+      # Das Gedächtnis. Liegt auf dem Host, überlebt jeden Neubau.
+      - ./data:/app/data
+      # Medien-Tab (27.09.2026): downloads/ schreibbar (Duplikate löschen),
+      # media/ read-only. Verletzt `read_only: true` nicht — eigene Mounts
+      # dürfen unabhängig vom Wurzeldateisystem schreibbar sein.
+      - ~/media-data/downloads:/media-data/downloads
+      - ~/media-data/media:/media-data/media:ro
+      # Schlüssel nur als Datei (DeepSeek-Denkrunde, 28.10.2026): ~/.config/friday/deepseek.key, nie in .env. Das Verzeichnis, nicht die Datei,
+      # wird eingehängt: fehlt die Datei, legt Docker sonst ein Verzeichnis an.
+      - ~/.config/friday:/run/friday-geheim:ro
+
+    # qBittorrent läuft direkt auf dem Host (hphome), nicht im internen
+    # Docker-Netz — für den Medien-Tab.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    # Minecraft-Bot (29.10.2026): eigener Compose-Stack (friday-mc) mit eigenem Netz. Der MindServer
+    # spricht socket.io; erreichbar ist er dort unter dem Namen `mindcraft`. Auf 127.0.0.1 gebunden
+    # sÃ¤he ihn nur der Host â€” Port 8080 auf dem Host ist qBittorrent.
+    networks:
+      - default
+      - mcnet
+
+    # Bewusst KEIN depends_on auf graphiti: das Langzeitgedächtnis ist
+    # Beiwerk. Fällt es aus, redet Friday weiter (Lehre aus dem alten
+    # Friday, B-02: "Ein Gedächtnisfehler darf das Gespräch nicht töten").
+
+  # ---------- WhatsApp: WAHA ----------
+  # WhatsApp als REST-Schnittstelle (devlikeapro/waha). Friday spricht nur mit
+  # diesem Container, nie direkt mit WhatsApp. Maschine GOWS (whatsmeow, Go,
+  # WebSocket): kein Chromium, und Chatliste samt Nachrichten kann sie von Haus
+  # aus — NOWEB bräuchte dafür erst einen Store.
+  #
+  # ACHTUNG: WhatsApp erlaubt keine fremden Programme. Das Koppeln verstößt gegen
+  # deren Nutzungsbedingungen und kann zur Sperre der Nummer führen. Friday liest
+  # nur und sendet nichts — automatisches Senden ist der Hauptgrund für Sperren.
+  waha:
+    # Tag nach Maschine, nicht nach Version allein: „gows-…“ ist das schlanke
+    # Abbild ohne Chromium. Ein blankes „2026.8.2“ gibt es auf Docker Hub NICHT
+    # (am 20.09.2026 geprüft) — die Tags heißen latest-, chrome-, gows-, noweb-.
+    image: devlikeapro/waha:gows-2026.8.2
+    container_name: friday-waha
+    restart: unless-stopped
+
+    # Bewusst KEIN Port nach außen: erreichbar nur im internen Docker-Netz,
+    # also nur für Friday. Die Oberfläche von WAHA braucht Eike nicht.
+    expose:
+      - "3000"
+
+    environment:
+      - WHATSAPP_DEFAULT_ENGINE=GOWS
+      # Ohne Schlüssel käme jeder im Docker-Netz an die Chats.
+      - WHATSAPP_API_KEY=${WAHA_SCHLUESSEL:-}
+      # Eingehende Nachrichten interessieren uns (noch) nicht: Friday liest,
+      # wenn Eike fragt. Kein Webhook, keine Dauerverarbeitung.
+      - WHATSAPP_RESTART_ALL_SESSIONS=True
+      - TZ=Europe/Berlin
+
+    volumes:
+      # Die Kopplung überlebt jeden Neubau — sonst müsste Eike neu scannen.
+      - ./data/waha:/app/.sessions
+
+  # ---------- Langzeitgedächtnis: Graphiti + FalkorDB ----------
+  # Vorlage: mcp_server/docker/docker-compose-falkordb.yml aus getzep/graphiti.
+  # Abweichungen: feste Versionen statt "latest", keine Ports nach außen
+  # (nur Friday spricht mit ihnen), Browser-Oberfläche aus, Kontingent-
+  # schonend (SEMAPHORE_LIMIT=1), Telemetrie aus.
+
+  falkordb:
+    image: falkordb/falkordb:v4.20.4
+    container_name: friday-falkordb
+    restart: unless-stopped
+    environment:
+      - BROWSER=0
+    volumes:
+      - ./data/graph:/var/lib/falkordb/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-p", "6379", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ---------- Lokaler Embedder für Graphiti (04.10.2026) ----------
+  # Embeddings rechnet hphome selbst: kein Tageskontingent, nichts verlässt den
+  # Server. Nur im internen Netz (kein ports:). Das Modell lädt beim ersten Start
+  # (einige hundert MB) und liegt danach in ./data/embedder. Gemessen am 05.10.2026:
+  # multilingual-e5-small 12/12 (sauber) und 12/12 (Slang), ~17 ms je Aufruf, 384 Dimensionen.
+  # Graphiti benutzt ihn erst, wenn in .env EMBEDDER_PROVIDER_GRAPHITI=openai steht
+  # (nach dem Neu-Einbetten, siehe docs/superpowers/plans/2026-10-04-lokaler-embedder.md).
+  embedder:
+    image: ghcr.io/huggingface/text-embeddings-inference:cpu-1.8
+    container_name: friday-embedder
+    restart: unless-stopped
+    command: ["--model-id", "${EMBEDDER_LOKAL_MODELL:-intfloat/multilingual-e5-small}",
+              "--port", "8080", "--auto-truncate"]
+    volumes:
+      - ./data/embedder:/data
+    mem_limit: 3g
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:8080/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 20
+      start_period: 120s
+
+  graphiti:
+    image: zepai/knowledge-graph-mcp:1.1.0-graphiti-0.30.1-standalone
+    container_name: friday-graphiti
+    restart: unless-stopped
+    depends_on:
+      falkordb:
+        condition: service_healthy
+    environment:
+      # Eigener Schlüssel, wenn in .env hinterlegt — aus einem EIGENEN
+      # Google-Projekt, denn die Limits gelten pro Projekt. Sonst derselbe
+      # wie Friday.
+      # Eigener Schlüssel nur für den Wissensgraphen (eigenes Projekt, eigenes
+      # Tageslimit) — so aktualisiert sich das Wissen unabhängig von Mails/Briefen/Chats.
+      - GOOGLE_API_KEY=${GRAPH_GEMINI_API_KEY:-${GRAPHITI_GEMINI_API_KEY:-${GEMINI_API_KEY}}}
+      - FALKORDB_URI=redis://falkordb:6379
+      - FALKORDB_DATABASE=friday
+      - GRAPHITI_GROUP_ID=eike
+      # Jede Episode löst mehrere Modellaufrufe aus. Kostenlose Stufe:
+      # eine Episode nach der anderen.
+      - SEMAPHORE_LIMIT=1
+      - GRAPHITI_TELEMETRY_ENABLED=false
+      # Mit eigenem Schlüssel (eigenes Google-Projekt, eigenes Kontingent) darf
+      # die Verarbeitung gründlicher sein: 3.5-flash für Extraktion, das leichte
+      # Modell für Kleinkram und das Nachsortieren (siehe friday_start.py).
+      # Extraktionsmodell (05.10.2026): gemini-3.5-flash erlaubt im Free-Tier nur 20 Anfragen/Tag, flash-lite 15/Minute
+      # (friday_start.py drosselt darauf). Friday prüft das Limit mit demselben Modell (graph.tageslimit_erschoepft).
+      - MODEL_NAME=${GRAPH_TEXTMODELL:-gemini-3.5-flash-lite}
+      - FRIDAY_KLEINES_MODELL=gemini-3.5-flash-lite
+      - EMBEDDER_MODEL=${EMBEDDER_MODEL:-gemini-embedding-001}
+      # Lokaler Embedder (05.10.2026, Standard aus): in .env EMBEDDER_PROVIDER_GRAPHITI=openai,
+      # EMBEDDER_MODEL=intfloat/multilingual-e5-small, EMBEDDER_DIMS=384 — nur nach dem Neu-Einbetten!
+      - EMBEDDER_PROVIDER_GRAPHITI=${EMBEDDER_PROVIDER_GRAPHITI:-gemini}
+      - EMBEDDER_DIMS=${EMBEDDER_DIMS:-768}
+      - EMBEDDER_URL=${EMBEDDER_URL:-http://embedder:8080/v1}
+      - CONFIG_PATH=/app/mcp/config/config.yaml
+    volumes:
+      - ./graphiti/config.yaml:/app/mcp/config/config.yaml:ro
+      # Startet den offiziellen Server mit korrigiertem Host-Schutz (siehe Datei).
+      - ./graphiti/friday_start.py:/app/mcp/friday_start.py:ro
+    command: ["uv", "run", "friday_start.py"]
+
+  # ---------- Videoproduktion für den YouTube-Kanal ----------
+  # Eigener Container, weil ffmpeg 277 Pakete nachzieht — in Fridays schlankem
+  # Abbild hätte das nichts zu suchen. Sie soll sofort antworten, nicht ein
+  # halbes Multimedia-Studio mitschleppen.
+  #
+  # Bewusst KEIN Zugriff auf den Docker-Socket: Friday legt Aufträge als Datei
+  # in data/studio/auftraege ab, dieser Arbeiter nimmt sie auf. Wer den Socket
+  # hat, ist faktisch Administrator des Servers — dafür ist ein YouTube-Kanal
+  # kein ausreichender Grund.
+  studio:
+    build:
+      context: ./studio
+    image: friday-studio:local
+    container_name: friday-studio
+    restart: unless-stopped
+
+    # Dateien gehören Eike, nicht root: Friday muss die fertigen Videos lesen
+    # und die Auftragsdateien schreiben können.
+    user: "${UID:-1000}:${GID:-1000}"
+
+    environment:
+      - STUDIO_ORDNER=/studio
+      # Großzügig: Rendern darf so lange dauern, wie es braucht. Das Limit
+      # verhindert nur, dass ein hängender Lauf den Arbeiter für immer blockiert.
+      - STUDIO_ZEITLIMIT=3600
+
+    volumes:
+      # Aufträge rein, fertige Videos raus — der einzige Weg zwischen Friday
+      # und der Produktion.
+      - ./data/studio:/studio
+      # Zwischendateien des Renderers auf der Platte statt im Abbild, damit ein
+      # abgebrochener Lauf nichts im Container zurücklässt. Bewusst NUR die vier
+      # Arbeitsordner: Ein Mount auf ganz `assets` würde `assets/fonts` aus dem
+      # Abbild überdecken, und ohne impact.ttf gibt es keine Untertitel.
+      - ./data/studio/assets/temp:/renderer/assets/temp
+      - ./data/studio/assets/audio_clips:/renderer/assets/audio_clips
+      - ./data/studio/assets/video_clips:/renderer/assets/video_clips
+      - ./data/studio/assets/final:/renderer/assets/final
+
+    # Kein depends_on auf friday: Der Arbeiter läuft eigenständig. Fällt Friday
+    # aus, rendert er den angefangenen Auftrag trotzdem zu Ende.
+
+  # ---------- Snapchat-Memories zusammenführen und filtern ----------
+  # Eigener Container (ffmpeg, OpenCV, ONNX-Modell). Wie das Studio ohne Docker-Socket:
+  # Friday legt Aufträge als Datei in data/snapmem/auftraege ab, dieser Arbeiter rechnet
+  # und schreibt Fortschritt und Ergebnis zurück. Kein Netz nötig, nichts geht nach außen.
+  snapmem:
+    build:
+      context: ./snapmem
+    image: friday-snapmem:local
+    container_name: friday-snapmem
+    restart: unless-stopped
+    user: "${UID:-1000}:${GID:-1000}"
+    mem_limit: 4g
+    environment:
+      - SNAPMEM_ORDNER=/snapmem
+    volumes:
+      - ./data/snapmem:/snapmem
+    network_mode: none
+
+  # ---------- Werkbank: OpenCode in der Sandbox ----------
+  # `opencode run` führt Shell-Befehle aus, wenn der Text es verlangt. Darum ein eigener Container
+  # OHNE .env, OHNE Schlüssel, OHNE data/ und ohne Docker: einziger Mount ist der Auftragsordner.
+  # Friday legt in.json ab, der Läufer schreibt out.json. Das Netz der Sandbox ist `internal`
+  # (kein Weg nach draußen, nicht ins Host-LAN, nicht zu den Friday-Diensten); der einzige Ausgang
+  # ist der Proxy `werkbank-proxy` mit Positivliste (opencode.ai, models.dev, nur Port 443, keine
+  # privaten Zieladressen). Ob opencode die Proxy-Variablen beachtet, ist beim Live-Gang zu prüfen.
+  # Läuft nur mit `--profile werkbank`. Das Image installiert opencode (neue Abhängigkeit) — vor dem
+  # ersten Bauen Eike fragen.
+  werkbank-sandbox:
+    profiles: ["werkbank"]
+    build:
+      context: ./werkbank-sandbox
+    image: friday-werkbank-sandbox:local
+    container_name: friday-werkbank-sandbox
+    restart: unless-stopped
+    user: "${UID:-1000}:${GID:-1000}"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 1g
+    pids_limit: 256
+    environment:
+      HTTPS_PROXY: http://werkbank-proxy:3128
+      HTTP_PROXY: http://werkbank-proxy:3128
+      https_proxy: http://werkbank-proxy:3128
+      http_proxy: http://werkbank-proxy:3128
+      NO_PROXY: ""
+      no_proxy: ""
+    tmpfs:
+      - /tmp:size=256m,mode=1777
+      - /home/sandbox:size=128m,uid=1000,gid=1000
+    # Lange Syntax ohne create_host_path: Docker legt den Ordner sonst als root an (Friday kann dann nicht
+    # hineinschreiben). Vor dem ersten Start: `mkdir -p data/werkbank/sandbox` (als Eike, nicht als root).
+    volumes:
+      - type: bind
+        source: ./data/werkbank/sandbox
+        target: /auftrag
+        bind:
+          create_host_path: false
+      # Projekt-Doku zum Nachlesen (nur lesen): OpenCode arbeitet in /projekt (Standard-Arbeitsordner des Läufers).
+      - type: bind
+        source: ./docs
+        target: /projekt/docs
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./AGENTS.md
+        target: /projekt/AGENTS.md
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./CLAUDE.md
+        target: /projekt/CLAUDE.md
+        read_only: true
+        bind:
+          create_host_path: false
+    depends_on:
+      - werkbank-proxy
+    networks:
+      - werkbank-sandbox
+
+  # Einziger Ausgang der Sandbox: HTTP-CONNECT nur zu Hosts der Positivliste in proxy.py.
+  # Hängt am internen Sandbox-Netz und an `werkbank-aussen` (normale Bridge). Kein Mount, keine Geheimnisse.
+  werkbank-proxy:
+    profiles: ["werkbank"]
+    image: friday-werkbank-sandbox:local
+    pull_policy: never                 # lokales Image (gebaut mit werkbank-sandbox), nie aus einer Registry ziehen
+    container_name: friday-werkbank-proxy
+    restart: unless-stopped
+    command: ["python3", "/opt/proxy.py"]
+    user: "${UID:-1000}:${GID:-1000}"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 256m
+    pids_limit: 128
+    networks:
+      - werkbank-sandbox
+      - werkbank-aussen
+
+networks:
+  werkbank-sandbox:
+    internal: true
+  werkbank-aussen:
+  # Netz des Minecraft-Bots (Compose-Projekt friday-mc). Extern, weil es dort entsteht:
+  # `docker compose up -d` in ~/docker/friday-mc muss vorher gelaufen sein.
+  mcnet:
+    external: true
+    name: friday-mc_mcnet

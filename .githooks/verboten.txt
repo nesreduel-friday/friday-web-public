@@ -1,0 +1,38 @@
+# Sperrbegriffe für den Datenschutz-Haken (.githooks/pre-commit, Regel e).
+# Eine Zeile je Begriff, ganze Wörter, Groß-/Kleinschreibung egal.
+#
+# HIER STEHEN NUR GENERISCHE MUSTER — die echten Namen und Orte gehören NICHT ins
+# Repo. Sie liegen lokal in data/privat/verboten.txt (gitignored); der Haken liest
+# beide Listen zusammen. Fehlt die private Liste, arbeitet er mit diesen Mustern
+# weiter (und blockt dadurch weniger, nicht mehr).
+#
+# Eintragen lohnt sich für: Straßennamen mit Hausnummer, Ortsnamen, Nachnamen,
+# Klinik-/Therapieangaben.
+
+# Platzhalter, die der Haken in diesem Repo schon einmal gesehen hat
+Musterstraße
+Beispielort
+Therapietermin
+Krankenhaus
+
+# Personenbezogene Dokumente: Wer solche Angaben committet, will sie meist nicht im Repo.
+Personalausweis
+Reisepass
+Geburtsurkunde
+Meldebescheinigung
+Sozialversicherungsnummer
+Steueridentifikationsnummer
+Gehaltsabrechnung
+Mietvertrag
+Arbeitsvertrag
+Bewerbungsunterlagen
+Patientenakte
+Arztbericht
+Medikamentenplan
+Therapiebericht
+Sorgerecht
+Vormundschaft
+Versicherungsschein
+Pflegegrad
+Schwerbehindertenausweis
+Aufenthaltsgenehmigung

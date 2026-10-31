@@ -1,0 +1,10 @@
+{
+  "_hinweis": "Aufbau echter Schulmanager-Antworten (classbook/get-homework), Inhalte erfunden.",
+  "data": [
+    {"date": "2026-08-31", "subject": "ma101", "homework": "S. 31, Nr. 10 und 11"},
+    {"date": "2026-09-02", "subject": "bi106", "homework": "Blatt mitbringen\nApp installieren"},
+    {"date": "2026-09-03", "subject": "en103", "homework": "Buch S. 18/19, Aufgabe 2 und 3"},
+    {"date": "2026-09-03", "subject": "ch104", "homework": "   "},
+    {"date": "2026-08-01", "subject": "de102", "homework": "Alte Aufgabe, ausserhalb des Zeitraums"}
+  ]
+}

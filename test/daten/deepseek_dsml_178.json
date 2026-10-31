@@ -1,0 +1,35 @@
+{
+  "id": "chatcmpl-aufzeichnung-178",
+  "object": "chat.completion",
+  "created": 1793253804,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "finish_reason": "stop",
+      "message": {
+        "role": "assistant",
+        "content": "<｜｜DSML｜｜ calls> <｜｜DSML｜｜ invoke name=\"gedanke_festhalten\"> <｜｜DSML｜｜ parameter name=\"text\" string=\"true\">Lehrkraft wollte bis 26.10. die Zusage fürs ganze Semester inkl. erster Analysis-Klausur; Eikes Mail vom 28.10. meldet nur „voraussichtliche“ Weiterführung und die Fehlzeiten, sagt die Klausur aber nicht ausdrücklich zu. Quelle: Mail 2217 + Mail 2234.</｜｜DSML｜｜ parameter> <｜｜DSML｜｜ parameter name=\"quellen\" string=\"true\">Mail 2217 (Lehrkraft); Mail 2234 (Eike an Lehrkraft)</｜｜DSML｜｜ parameter> ",
+        "tool_calls": [
+          {
+            "id": "call_gf_178",
+            "type": "function",
+            "function": {
+              "name": "gedanke_festhalten",
+              "arguments": "{\"art\": \"erkenntnis\", \"text\": \"Lehrkraft wollte bis 26.10. die Zusage fürs ganze Semester inkl. erster Analysis-Klausur; Eikes Mail vom 28.10. meldet nur „voraussichtliche“ Weiterführung und die Fehlzeiten, sagt die Klausur aber nicht ausdrücklich zu. Quelle: Mail 2217 + Mail 2234.\", \"quellen\": [\"Mail 2217 (Lehrkraft); Mail 2234 (Eike an Lehrkraft)\"]}"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21480,
+    "completion_tokens": 118,
+    "total_tokens": 21598,
+    "prompt_cache_hit_tokens": 20224,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  }
+}

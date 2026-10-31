@@ -1,0 +1,21 @@
+{
+  "kern": "https://hphome.beispiel.ts.net",
+  "modell": "modelle/vosk-model-small-en-us-0.15",
+  "wort": "friday",
+  "kennung": "pc-overlay",
+  "mikro": null,
+  "ausgabe": null,
+  "wake_absolut": 0.006,
+  "wake_faktor": 3.0,
+  "verstaerkung": 6.0,
+  "sende_tor": true,
+  "sende_absolut": 0.01,
+  "sende_faktor": 2.0,
+  "sende_nachlauf": 8,
+  "aktivitaet": {
+    "start": "low",
+    "ende": "low",
+    "vorlauf_ms": 300,
+    "pause_ms": 900
+  }
+}

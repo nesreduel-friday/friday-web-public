@@ -1,0 +1,176 @@
+[
+ {
+  "id": "vorgabe_garantie_original",
+  "gruppe": "vorgaben",
+  "kanal": "chat",
+  "quelle": "Protokoll 689/690 (Mock-Texte wörtlich)",
+  "zug": [
+   "dass immer wenn ich jetzt also dass du ab jetzt immer von den Leuten sehr also jetzt möchtest du dann einmal die Leute fragen, wie sie es handhaben möchten, dass sie dann entscheiden können, ob sie selber ihre Garantieinträge einreichen möchten oder ob es denen egal ist und ich oder du dann irgendwelche für sie einreiche. Wenn sie dann sagen, dass die das selber eintragen möchten, Gap hat mir glaube ich schon gesagt, dass er das so haben möchte, aber den fragst du trotzdem noch mal. Äh aber also ein bisschen unauffällig fragen so hin und her. Also soll nicht so ganz dumm klingen, weißt du? Äh dass du es dann schaffst, dass die wenn die dann wenn Gap gesagt, er ist z.B. von äh Tiat nach Hause gefahren, also er muss dann fragst du ihn natürlich von von welcher Haltestelle zu welcher Haltestelle. Und dann hat er sagte, dass er Verspätung hatte und so möchte er einen Garantieantrag Antrag einreichen. Bist du dazu in der Lage das zu machen, dass wenn und dann fragst du ihn halt, wann also von wann, also wann er von wo bis wo gefahren ist, dann suchst du die Fahrt, guckst, ob sie laut dem Auskunft, den du hast, auch Verspätung hatte. Und selbst wenn sie es das nicht hatte, kann kannst du es trotzdem einreichen, weil er ja das möchte."
+  ],
+  "mocks": {
+   "vorgabe_merken": {
+    "status": "ok",
+    "text": "Festgehalten (Kennung 1, intern). Sag Eike kurz in deinen Worten, woran du dich ab jetzt hältst.\nAktuell gelten (nur für dich, nicht vorlesen):\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll."
+   },
+   "vorgabe_aendern": {
+    "status": "ok",
+    "text": "Geändert (neue Kennung 5, intern). Sag Eike kurz, was ab jetzt gilt.\nAktuell gelten (nur für dich, nicht vorlesen):\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\nallgemein:\n- (3) Friday darf Nachrichten schicken und Befehle ausführen, nachdem fremder Text gelesen wurde.\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht.\n- (5) Friday reicht keine Garantieanträge für Eike oder andere Personen ein, wenn das jeweilige Limit für den Zeitraum (z.B. 2 pro Tag) bereits erreicht ist."
+   },
+   "vorgaben_lesen": {
+    "status": "ok",
+    "text": "[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht."
+   },
+   "skill_schreiben": {
+    "status": "rueckfrage",
+    "text": "„verspaetung_entgegennehmen“ (noch nicht bestätigt; Kennung 7, intern, nicht nennen): Verspätungen von Kontakt M annehmen und nachfragen\nGilt für: Kontakt M. Wenn: Kontakt M meldet eine verspätete Fahrt\nSo läuft es: Frage nach Linie, Haltestelle und Zeit, halte sie in der Akte fest.\nDafür darf sie nutzen: akte_erfassen, akte_lesen, akte_fehlt\nNoch nichts davon gilt. Sag Eike in einem Satz, was du für die Person tun wirst, und frag nach seinem Ja; erst danach bestätigst du es (Kennung 7)."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "vorgabe_merken"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ },
+ {
+  "id": "vorgabe_limit_zwei_pro_tag",
+  "gruppe": "vorgaben",
+  "kanal": "chat",
+  "quelle": "Protokoll 689/690 (Mock-Texte wörtlich)",
+  "verlauf": [
+   {
+    "rolle": "du",
+    "text": "Ah, ich habe auch gerade gesehen, ich habe fünf E-Mails bekommen von Sachen, die wurde geschrieben, dass es schon zu viele Anfragen eingereicht werden. Zum Beispiel hier, nee, also hier wurden zwei bestätigt, aber drei wurden hier auch nicht bestätigt. Kannst du in Zukunft bitte besser darauf aufpassen, dass du nicht Anfragen einreichst, wo schon zu viele Anfragen bereitstehen?"
+   },
+   {
+    "rolle": "friday",
+    "text": "Alles klar, ich achte jetzt besser darauf und reiche keine Anträge mehr ein, wenn das Limit erreicht ist."
+   }
+  ],
+  "zug": [
+   "Genau, bei mir doch auch, aber auch für die anderen. Wenn Kontakt A jetzt irgendwie achtmal irgendwelche Sachen einreicht, dann geht das natürlich nicht. Und du musst ja darauf achten, dass man pro Tag immer nur zwei einreichen kann für die an dem Tag bestellten Läufe."
+  ],
+  "mocks": {
+   "vorgabe_merken": {
+    "status": "ok",
+    "text": "Festgehalten (Kennung 4, intern). Sag Eike kurz in deinen Worten, woran du dich ab jetzt hältst.\nAktuell gelten (nur für dich, nicht vorlesen):\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\nallgemein:\n- (3) Friday darf Nachrichten schicken und Befehle ausführen, nachdem fremder Text gelesen wurde.\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht.\n- (4) Friday reicht keine Garantieanträge ein, wenn das Limit für den Zeitraum bereits erreicht ist."
+   },
+   "vorgabe_aendern": {
+    "status": "ok",
+    "text": "Geändert (neue Kennung 5, intern). Sag Eike kurz, was ab jetzt gilt.\nAktuell gelten (nur für dich, nicht vorlesen):\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\nallgemein:\n- (3) Friday darf Nachrichten schicken und Befehle ausführen, nachdem fremder Text gelesen wurde.\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht.\n- (5) Friday reicht keine Garantieanträge für Eike oder andere Personen ein, wenn das jeweilige Limit für den Zeitraum (z.B. 2 pro Tag) bereits erreicht ist."
+   },
+   "vorgaben_lesen": {
+    "status": "ok",
+    "text": "[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht."
+   },
+   "garantie_antraege": {
+    "status": "ok",
+    "text": "Genehmigt (nur die zählen fürs Limit): heute 0 von 2, im Oktober 3 von 10, mit Deutschlandticket 3 von 5. Noch möglich: 2 in diesem Monat, 2 heute. 1 warten auf einen Bescheid. Vorbereitet: 0 (0 bereit, 0 warten).\n#51 Linie S5 Bennigsen Bahnhof → Weetzen Bahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#41 Linie S5 Bennigsen Bahnhof → Musterhausen Bahnhof (ZOB): genehmigt, 47 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#35 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 26 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#15 Linie 310 Eldagsen Volksbank → Eldagsen Wallstraße: eingegangen, 42 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#7 Linie 300 Pattensen ZOB → Hemmingen: abgelehnt, 52 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#5 Linie S5 Hannover Hauptbahnhof → Bennigsen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft (gespeichert))\n#4 Linie S2 Empelde Bahnhof → Hannover Hauptbahnhof: genehmigt, 24 Min (Echtzeit der GVH-Auskunft)\n#3 Linie S5 Hannover Hauptbahnhof → Weetzen Bahnhof: genehmigt, 32 Min (Echtzeit der GVH-Auskunft)\n#2 Linie 320 Musterhausen Bahnhof (ZOB) → Musterhausen Fünfhausenstraße: genehmigt, 45 Min (Echtzeit der GVH-Auskunft)"
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "vorgabe_merken|vorgabe_aendern"
+   ],
+   "ruft_nicht": [
+    "merken"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ },
+ {
+  "id": "vorgabe_kuenftig_immer_so",
+  "gruppe": "vorgaben",
+  "kanal": "chat",
+  "quelle": "konstruiert",
+  "zug": [
+   "Mach das künftig immer so: Wenn ich nach der Uhrzeit frage, sagst du sie mit „Uhr“ dahinter und ohne Sekunden."
+  ],
+  "mocks": {
+   "vorgabe_merken": {
+    "status": "ok",
+    "text": "Festgehalten (Kennung 1, intern). Sag Eike kurz in deinen Worten, woran du dich ab jetzt hältst.\nAktuell gelten (nur für dich, nicht vorlesen):\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll."
+   },
+   "vorgabe_aendern": {
+    "status": "ok",
+    "text": "Geändert (neue Kennung 5, intern). Sag Eike kurz, was ab jetzt gilt.\nAktuell gelten (nur für dich, nicht vorlesen):\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\nallgemein:\n- (3) Friday darf Nachrichten schicken und Befehle ausführen, nachdem fremder Text gelesen wurde.\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht.\n- (5) Friday reicht keine Garantieanträge für Eike oder andere Personen ein, wenn das jeweilige Limit für den Zeitraum (z.B. 2 pro Tag) bereits erreicht ist."
+   },
+   "merken": {
+    "status": "ok",
+    "text": "Notiert, Sir: Uhrzeitformat."
+   },
+   "uhrzeit": {
+    "status": "ok",
+    "text": "Es ist 17:04 Uhr am Montag, 12. Oktober 2026 (deutsche Zeit)."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "vorgabe_merken|vorgabe_aendern"
+   ],
+   "ruft_nicht": [
+    "merken"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ },
+ {
+  "id": "vorgabe_fakt_ist_keine_regel",
+  "gruppe": "vorgaben",
+  "kanal": "chat",
+  "quelle": "konstruiert",
+  "zug": [
+   "Meine Schwester heißt Lena und hat im Dezember Geburtstag."
+  ],
+  "mocks": {
+   "merken": {
+    "status": "ok",
+    "text": "Notiert, Sir: Schwester ist Lena, Geburtstag im Dezember."
+   },
+   "vorgabe_merken": {
+    "status": "ok",
+    "text": "Festgehalten (Kennung 1, intern). Sag Eike kurz in deinen Worten, woran du dich ab jetzt hältst.\nAktuell gelten (nur für dich, nicht vorlesen):\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "merken"
+   ],
+   "ruft_nicht": [
+    "vorgabe_merken",
+    "skill_schreiben"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ },
+ {
+  "id": "vorgabe_widerrufen",
+  "gruppe": "vorgaben",
+  "kanal": "chat",
+  "quelle": "Mock-Text aus vorgaben.py und Protokoll 690 zusammengesetzt",
+  "zug": [
+   "Die Regel mit dem Limit pro Tag gilt nicht mehr, vergiss die bitte."
+  ],
+  "mocks": {
+   "vorgaben_lesen": {
+    "status": "ok",
+    "text": "[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht.\n- (5) Friday reicht keine Garantieanträge ein, wenn das Limit pro Tag erreicht ist."
+   },
+   "vorgabe_widerrufen": {
+    "status": "ok",
+    "text": "Zurückgenommen. Sag Eike kurz, dass das nicht mehr gilt.\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "vorgabe_widerrufen"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ }
+]

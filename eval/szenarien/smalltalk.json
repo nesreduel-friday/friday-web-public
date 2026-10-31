@@ -1,0 +1,141 @@
+[
+ {
+  "id": "smalltalk_uhrzeit",
+  "gruppe": "smalltalk",
+  "kanal": "chat",
+  "quelle": "Protokoll 689/690 (Mock-Texte wörtlich)",
+  "zug": [
+   "Wie spät ist es gerade?"
+  ],
+  "mocks": {
+   "uhrzeit": {
+    "status": "ok",
+    "text": "Es ist 17:04 Uhr am Montag, 12. Oktober 2026 (deutsche Zeit)."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "uhrzeit"
+   ],
+   "ruft_nicht": [
+    "vorgabe_merken",
+    "vorgabe_aendern",
+    "skill_schreiben",
+    "schicke_nachricht",
+    "schicke_snap",
+    "nachricht_an_personen",
+    "merken"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ },
+ {
+  "id": "smalltalk_wetter",
+  "gruppe": "smalltalk",
+  "kanal": "chat",
+  "quelle": "konstruiert",
+  "zug": [
+   "Brauche ich morgen eine Jacke?"
+  ],
+  "mocks": {
+   "wetter": {
+    "status": "ok",
+    "text": "Hannover morgen: 9 bis 14 Grad, nachmittags Regen (Wahrscheinlichkeit 70 Prozent)."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "wetter"
+   ],
+   "ruft_nicht": [
+    "vorgabe_merken",
+    "vorgabe_aendern",
+    "skill_schreiben",
+    "schicke_nachricht",
+    "schicke_snap",
+    "nachricht_an_personen",
+    "merken"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true,
+   "muss_enthalten": [
+    "Jacke|Regen|regnet|Schirm|kühl"
+   ]
+  }
+ },
+ {
+  "id": "smalltalk_witz",
+  "gruppe": "smalltalk",
+  "kanal": "chat",
+  "quelle": "konstruiert",
+  "zug": [
+   "Erzähl mir einen kurzen Witz."
+  ],
+  "mocks": {},
+  "erwartet": {
+   "ruft_nicht": [
+    "*"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ },
+ {
+  "id": "smalltalk_danke",
+  "gruppe": "smalltalk",
+  "kanal": "chat",
+  "quelle": "konstruiert",
+  "zug": [
+   "Danke, das war's für heute."
+  ],
+  "mocks": {},
+  "erwartet": {
+   "ruft_nicht": [
+    "*"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true,
+   "darf_nicht_enthalten": [
+    "festgehalten|gemerkt|gespeichert"
+   ]
+  }
+ },
+ {
+  "id": "smalltalk_befinden",
+  "gruppe": "smalltalk",
+  "kanal": "chat",
+  "quelle": "konstruiert",
+  "zug": [
+   "Na, wie geht's dir heute?"
+  ],
+  "mocks": {},
+  "erwartet": {
+   "ruft_nicht": [
+    "*"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ },
+ {
+  "id": "smalltalk_rechnen",
+  "gruppe": "smalltalk",
+  "kanal": "chat",
+  "quelle": "konstruiert",
+  "zug": [
+   "Was ist 17 mal 23?"
+  ],
+  "mocks": {},
+  "erwartet": {
+   "ruft_nicht": [
+    "*"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true,
+   "muss_enthalten": [
+    "391"
+   ]
+  }
+ }
+]

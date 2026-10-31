@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Handy-Steuerung</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<main>
+  <canvas id="bild" tabindex="0" width="540" height="1200" aria-label="Handy-Bildschirm"></canvas>
+  <aside>
+    <h1>Handy</h1>
+    <p id="status" role="status">Nicht verbunden</p>
+    <div class="knoepfe">
+      <button data-taste="zurueck">Zurück</button>
+      <button data-taste="home">Home</button>
+      <button data-taste="uebersicht">Übersicht</button>
+      <button data-taste="ein_aus">Ein/Aus</button>
+      <button data-taste="aufwecken">Aufwecken</button>
+      <button data-taste="lauter">Lauter</button>
+      <button data-taste="leiser">Leiser</button>
+    </div>
+    <button id="neu" hidden>Neu verbinden</button>
+    <p class="hinweis">Der Snap-Helfer ist pausiert, solange diese Seite verbunden ist. Aufträge bleiben in der Schlange.
+      Klicken = tippen, Ziehen = wischen, Mausrad = scrollen. Tasten gehen ans Handy, wenn das Bild angeklickt ist.</p>
+  </aside>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

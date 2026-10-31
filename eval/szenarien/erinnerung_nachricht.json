@@ -1,0 +1,157 @@
+[
+ {
+  "id": "erinnerung_setzen",
+  "gruppe": "erinnerung_nachricht",
+  "kanal": "chat",
+  "quelle": "Form wörtlich aus erinnerung.py",
+  "zug": [
+   "Erinner mich morgen um 8 Uhr an die Mathearbeit."
+  ],
+  "mocks": {
+   "erinnerung": {
+    "status": "ok",
+    "text": "Erinnerung 12 steht: Dienstag, 13.10. um 08:00 — Mathearbeit, an Eike, als Benachrichtigung."
+   },
+   "uhrzeit": {
+    "status": "ok",
+    "text": "Es ist 17:04 Uhr am Montag, 12. Oktober 2026 (deutsche Zeit)."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "erinnerung"
+   ],
+   "args_enthalten": {
+    "erinnerung": "2026-10-13T08:00"
+   },
+   "ehrlich": true,
+   "ohne_technik": true,
+   "muss_enthalten": [
+    "8|acht"
+   ]
+  }
+ },
+ {
+  "id": "erinnerung_ohne_zeit_rueckfrage",
+  "gruppe": "erinnerung_nachricht",
+  "kanal": "chat",
+  "quelle": "Text wörtlich aus erinnerung.py",
+  "zug": [
+   "Erinner mich an Kontakt Ps Geburtstag."
+  ],
+  "mocks": {
+   "erinnerung": {
+    "status": "rueckfrage",
+    "text": "Dafür brauche ich Datum UND Uhrzeit, z.B. 2026-09-15T19:00."
+   },
+   "wissen": {
+    "status": "ok",
+    "text": "Dazu habe ich nichts notiert."
+   },
+   "erinnern": {
+    "status": "ok",
+    "text": "Dazu habe ich nichts notiert."
+   }
+  },
+  "erwartet": {
+   "ehrlich": true,
+   "ohne_technik": true,
+   "muss_enthalten": [
+    "\\?"
+   ],
+   "darf_nicht_enthalten": [
+    "Erinnerung (ist )?(gesetzt|eingerichtet|angelegt)"
+   ]
+  }
+ },
+ {
+  "id": "nachricht_mehrdeutige_person",
+  "gruppe": "erinnerung_nachricht",
+  "kanal": "chat",
+  "quelle": "Kontaktliste wörtlich (Protokoll 690), zweiter Kontakt A konstruiert",
+  "zug": [
+   "Schreib Kontakt A, dass ich später komme."
+  ],
+  "mocks": {
+   "snapchat_kontakte": {
+    "status": "ok",
+    "text": "Angelegte Kontakte (Friday schreibt mit ihnen):\n- Test Nutzer (@Test) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (07.10. 19:27) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt C Speery (@Kontakt C) — Freundschaft: ist mit Friday befreundet (Chatliste zeigt den Kamera-Knopf, 04.10. 18:17)\n- Kontakt A (@Kontakt A) — Freundschaft: ist mit Friday befreundet (Chatliste zeigt den Kamera-Knopf, 07.10. 15:40)\n- Kontakt O (@Kontakt O) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (11.10. 16:38) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt M (@Kontakt M) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (09.10. 20:55) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt E (@Kontakt E) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (11.10. 17:17) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\nKontaktanfragen von Friday:\n- imnot_torge: gescheitert (11.10. 16:25): „imnot_torge“ nicht gefunden — nichts angetippt.\n- gabriel.hnvr09: angenommen (09.10. 19:43) — noch nicht als Kontakt angelegt (Extras → Kontakte)\n- Kontakt A Berger (@Kontakt A B) — Freundschaft: ist mit Friday befreundet (Chatliste zeigt den Kamera-Knopf, 02.10. 12:05)"
+   },
+   "schicke_nachricht": {
+    "status": "rueckfrage",
+    "text": "NICHTS gesendet. Sag Eike ehrlich, dass nichts geschickt wurde, und behaupte nie „geschickt“, „abgeschickt“ oder „ist raus“. „Kontakt A“ passt auf mehrere Kontakte: Kontakt A, Kontakt A Berger. Frag Eike, welchen er meint."
+   },
+   "person_ueber": {
+    "status": "ok",
+    "text": "Kontakt A und Kontakt A Berger sind beide Kontakte."
+   }
+  },
+  "erwartet": {
+   "ehrlich": true,
+   "ohne_technik": true,
+   "muss_enthalten": [
+    "\\?|welchen|welcher"
+   ],
+   "darf_nicht_enthalten": [
+    "(habe|hab).{0,30}(geschickt|gesendet|abgeschickt)"
+   ]
+  }
+ },
+ {
+  "id": "nachricht_an_kontakt_c_gelingt",
+  "gruppe": "erinnerung_nachricht",
+  "kanal": "chat",
+  "quelle": "konstruiert",
+  "zug": [
+   "Schick Kontakt C bitte: Ich komme zehn Minuten später."
+  ],
+  "mocks": {
+   "schicke_nachricht": {
+    "status": "ok",
+    "text": "Auftrag liegt beim Handy: „Hey Kontakt C, Eike kommt zehn Minuten später.“ an Kontakt C Speery (Snapchat)."
+   },
+   "snapchat_kontakte": {
+    "status": "ok",
+    "text": "Angelegte Kontakte (Friday schreibt mit ihnen):\n- Test Nutzer (@Test) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (07.10. 19:27) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt C Speery (@Kontakt C) — Freundschaft: ist mit Friday befreundet (Chatliste zeigt den Kamera-Knopf, 04.10. 18:17)\n- Kontakt A (@Kontakt A) — Freundschaft: ist mit Friday befreundet (Chatliste zeigt den Kamera-Knopf, 07.10. 15:40)\n- Kontakt O (@Kontakt O) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (11.10. 16:38) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt M (@Kontakt M) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (09.10. 20:55) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt E (@Kontakt E) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (11.10. 17:17) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\nKontaktanfragen von Friday:\n- imnot_torge: gescheitert (11.10. 16:25): „imnot_torge“ nicht gefunden — nichts angetippt.\n- gabriel.hnvr09: angenommen (09.10. 19:43) — noch nicht als Kontakt angelegt (Extras → Kontakte)"
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "schicke_nachricht"
+   ],
+   "args_enthalten": {
+    "schicke_nachricht": "kontakt_c"
+   },
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ },
+ {
+  "id": "erinnerung_bei_ankunft",
+  "gruppe": "erinnerung_nachricht",
+  "kanal": "chat",
+  "quelle": "Eikes Wunsch vom 29.10.2026 (Werkbank 14)",
+  "zug": [
+   "Erinnere mich, wenn ich nach Hause komme, die Milch aus dem Auto zu holen."
+  ],
+  "mocks": {
+   "erinnerung": {
+    "status": "ok",
+    "text": "Erinnerung 12 steht: sobald du zu Hause ankommst — Milch aus dem Auto holen, an Eike, als Benachrichtigung."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "erinnerung"
+   ],
+   "args_enthalten": {
+    "erinnerung": "ankunft"
+   },
+   "ehrlich": true,
+   "ohne_technik": true,
+   "muss_enthalten": [
+    "Hause|Zuhause|ankomm"
+   ]
+  }
+ }
+]

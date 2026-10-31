@@ -1,0 +1,34 @@
+# Geheimnisse
+.env
+
+# Laufzeitdaten — das Gedächtnis gehört nicht ins Repo
+data/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# YouTube/Studio: OAuth-Geheimnis und Sitzungstoken gehoeren NIE ins Repo
+*client_secret*.json
+*client_secrets*.json
+youtube_token*.json
+
+# Vorlagen-Ordner: fremdes Projekt mit eigenem Git und eigener .env
+1/
+
+.worktrees/
+
+# Großes Modell nicht ins Repo (siehe snapmem/models/README.md)
+snapmem/models/clip_vision_q.onnx
+
+# Eval-Ergebnisse (Messläufe gegen das echte Modell)
+eval/ergebnisse/
+
+# Datenschutz-Haken: Sicherheitsnetz â€” nichts davon gehÃ¶rt ins Repo
+.agent-loop/logs/
+*.bundle
+*.bak
+snapmem/tests/daten/*.jpg
+

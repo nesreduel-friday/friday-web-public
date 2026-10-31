@@ -1,0 +1,16 @@
+:root { color-scheme: light dark; --bg: #f4f4f6; --fg: #1c1c1e; --card: #fff; --rand: #d0d0d6; --akzent: #0a6cff; }
+@media (prefers-color-scheme: dark) { :root { --bg: #111114; --fg: #ececf0; --card: #1c1c20; --rand: #38383f; --akzent: #4c93ff; } }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.4 system-ui, sans-serif; }
+main { display: flex; gap: 20px; padding: 16px; align-items: flex-start; justify-content: center; flex-wrap: wrap; }
+canvas { height: calc(100vh - 32px); max-width: 100%; aspect-ratio: 9 / 20; background: #000; border-radius: 18px;
+  border: 2px solid var(--rand); outline: none; touch-action: none; cursor: pointer; }
+canvas:focus { border-color: var(--akzent); }
+aside { width: 260px; max-width: 100%; background: var(--card); border: 1px solid var(--rand); border-radius: 12px; padding: 14px; }
+h1 { margin: 0 0 6px; font-size: 18px; }
+.knoepfe { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px 0; }
+button { font: inherit; padding: 9px 10px; border-radius: 8px; border: 1px solid var(--rand); background: var(--bg); color: var(--fg); cursor: pointer; }
+button:hover { border-color: var(--akzent); }
+#status { margin: 0; font-weight: 600; }
+#status.fehler { color: #d12c2c; }
+.hinweis { font-size: 13px; opacity: .75; margin-bottom: 0; }

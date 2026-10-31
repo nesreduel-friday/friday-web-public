@@ -1,0 +1,2935 @@
+{
+"hinweis": "Von Hand markiert am 06.10.2026: eingebrannt = Geo-Text, Sticker, Emoji, Text oder Linsen-Effekt im Bild, obwohl keine Overlay-Datei existiert. Bilder 0-147 ohne Overlay-Datei. Zweite Runde (06.10.2026): alle 419 Bilder, die den ersten Erkenner passierten, von Hand angesehen; durchgerutschte Linsen/Sticker (Bart, pinke Brille, Herzen, Laser, Emoji) markiert. Bild 9 der ersten Runde korrigiert (Schnurrbart-Linse).",
+"bilder": [
+{
+"zip": "export.zip",
+"datei": "memories/2025-01-12_f43e1c59-ac03-d6bd-7ad6-b24f275b5fa4-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-21_CC03DE7E-52F0-4957-A4B1-BE9E7ED9E4B6-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-06_06E64A86-75C7-469E-92AB-97CBDB4C09C5-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-02_f48c0ce4-6502-ea06-dc1f-5ca212b4acad-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-21_953490C0-EB53-4383-875A-5567DBA1BB21-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-11_97c70d70-facf-6c46-8305-1ab6767c1cbc-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-02-09_6f9f219c-8deb-4470-7cc8-d3faeb334b2c-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-01-17_8db119c0-7af0-b0e6-99a6-ff9dcc1f9188-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-04-04_AF03A747-C9C7-4E8E-8F4D-39C50F0016FE-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-13_055de74c-c7b1-a6a1-3900-f6797cd2131a-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-17_198c58e6-f8a0-a979-b1d8-bff9e573d49a-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-01-20_4C504420-1DAB-4E14-907F-0D25B9AA32FB-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-01-07_9CFAA8D7-7752-49C9-95B0-99374BABBD9E-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-22_10FDAA87-DC23-4BC0-9636-66FFA0FB8415-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-21_2C76DAFC-5990-49BD-9A02-EA3632037729-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-10-01_44DFD7F4-38DF-4E95-A2B4-C7237572F3D3-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-11_2126B8CC-2083-46B2-A1AF-31FF67C27A66-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-12_59635a16-08e9-605c-11c4-c749f2ed20d6-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-01_eaf06f40-ce13-e6ca-b6d5-bcfa3cf24fed-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-13_eb869138-ca18-419e-784e-ae7c16fa3aff-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-10-02_cc7274de-8789-eb43-4e1f-317214dfd12c-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-21_25421778-2357-4CBA-BEB3-EDD49C3DDA02-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-30_5832AD8C-5243-4230-B301-4E64FF18005E-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-21_669e9bac-0bf3-ef5b-1a78-8ab9fdec2f13-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-04-19_32DDEEB1-D5AB-4E58-8854-368F7F7A3BAF-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-01-28_8D11BB23-E3E8-43FB-BA37-F918C5F8E0FD-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-09-10_26DC7C4E-10B7-4984-BCED-EDDDA66EB640-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-24_D1F8A099-CC23-49B8-BD82-B95982A340BB-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-03_574A4B91-2B0E-44F5-9D6B-816622E2EA0F-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-11_0929f9ce-8561-26eb-64eb-3576f32d8350-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-01-19_a834b5dc-90dc-5f11-3171-b485da55fdad-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-09-24_74C7CE50-268A-4640-8F32-7EC4659D5867-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-17_fbdea6a2-2bbd-400d-1028-1b8d1da4788b-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-21_D37B77C2-EDB0-4B82-A48F-58F18CD46308-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-10-01_588C221C-BAB8-42FD-ACF3-4F33F59A989A-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-25_942EEE69-9529-4296-8DE1-0E14F3EB36C4-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-10-20_3AB2FB01-F618-4822-931B-DC4F46C0A243-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-09-11_ADC39A41-ACBE-4138-8613-82F4E57D28F9-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-30_400c0422-96aa-da44-3dc7-c25749833322-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-10-06_c2318d18-afa7-3f3e-23d9-403f0652a911-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-03_9ff22bec-5046-ffc3-be3c-cae96a419263-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-08-25_C45EE4F9-7E06-44BF-87B7-E93E4FA6CAA2-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-25_D9F615DF-1328-4D84-B655-20D51771B2D3-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-02_5CC5C57F-D2C6-4E19-9910-D092E31C6558-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-04_e4b5c6d7-e8bb-284c-b230-3de3c3b57bb5-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-30_08DE06CE-BBEA-4A08-8C23-0A71DEE1DA1C-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-10-15_c1ddd6e7-59da-dba4-46df-326157fc73e7-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-29_AC8A14C9-12AE-4A90-BA83-E06F3AB96D9D-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-02-10_820bf116-dc96-0fb6-02fc-5b0d4aca4cd2-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_24733451-D706-46E5-B627-EB89EA796BBE-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-14_DBD7F9BC-0B38-416B-BA5A-ED5E1811C1A2-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-01-29_e68e450e-e777-d85c-43fd-b443d741e380-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-02_0d1d895e-afcb-5032-846f-eb3901c0a1a5-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-09_7E03D467-A9B6-4951-841F-1EA649E33F18-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-02_2C63DE88-7F3B-4E91-B37A-87D5D86A6226-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-09-15_A781E821-D777-406D-8D37-0D9C4BEAE66F-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-03_5F4EE39A-5251-40F9-8E60-6C12EB46A3C0-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-24_A13F5283-35B3-4471-B587-566E6703FC25-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-12_f663eb16-8d44-202b-cdd7-71f0af0a9ec2-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-01_6F66430F-32D1-4FF6-9971-87028C538FA6-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-06_9616d473-2977-2338-204d-ce01d7371408-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-21_b4d59bc3-f23b-3d37-f2c0-a91301f5054d-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-09-10_5BE222A4-DD5E-4EF4-8183-A2CC2AB6CB5B-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-24_964892C1-3110-46A4-A85E-A500CDE47703-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-20_CD680714-0FA2-401E-B626-881976C7060D-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-01-07_f57f3fff-0a68-532d-a266-b54a374c3699-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-27_EF361615-81BF-411C-9FBB-14C5035D5D4B-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-12_F2CB0BAC-CDE1-48C3-A49C-F3B494ECA240-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-12_e184ad63-e902-f579-0020-7e00e204a821-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-09_e4b5c800-d336-55c3-b786-baa58c4d0a14-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-01-26_E40A7D44-5422-4C4A-998C-85A393408162-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-04_8BC379CC-DCCE-4D24-B1D4-6D97232D5A5C-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-29_4F0443CE-4904-4CEE-A389-304BA821B18E-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-01_0dff9691-a65f-5818-e499-6b90acf0af65-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-09_2E05DAAE-4D8F-47AB-8B4E-390FD63B8AF9-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-07-29_4130b589-2b08-2649-3b73-f6955de2b557-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-25_772ABAFC-24A2-4407-9510-BA18892C6829-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-06_5ee94e55-2802-2521-cca6-411bf1e26b05-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-02-12_59233d19-ed0e-1b39-d1e7-db0397562e06-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-21_5C12BB67-14DE-4352-8EAD-BE6F8624EB2C-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-02_9CEB88A0-A07F-4DDC-9FD1-EF0FA033DBB6-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-07_02d097c4-f950-3c3f-b4dc-b3596bcc9af0-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-09-18_C0CB1DAE-3C8C-4FF6-8E17-0BC7A6FD541A-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-29_6f4e9c6f-2354-43cd-5a4c-46b253b5db7c-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-02-24_460641D5-92C9-4F02-A43F-4C232D500857-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-09-08_54AF92A4-FCB6-4B06-8595-4A974491B0DA-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-09_e0c80c99-a2f9-8f07-000a-826bcb58605a-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-21_D3B20142-36DE-4FA6-92B9-F0CDDF6D53F9-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-02-03_478241d0-65a4-475f-1e30-ab82a6dfeb09-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-20_f379b49f-526f-ed11-dbc0-1bca8f2f80e4-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-10_957F2942-7453-4320-93E6-2E330C778294-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-01_623a1673-e1d3-d514-44f0-628dc9c37952-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-23_946DF1A9-A2F8-45AF-A78F-63CB082BF5C7-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-02-01_EE1366EF-2491-40EA-B2E9-1976676DF8CC-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-25_28B3FA7C-EF21-442D-8B1E-0D453D1EA234-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-07_F6A969DF-E093-472A-BEF6-2CDBC103874C-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-09_6236657c-0365-ab93-5dbd-8986a4d6f716-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-06_438acd3f-5a9e-29a7-25e5-21f995a15cee-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-23_722b7d40-34af-c076-b3cc-b0b663548d50-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-02-11_CB43105E-AD6D-4E03-A2A5-6FDD9A5A6751-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-28_61115EED-105B-40D2-A787-D06CA01FEBF1-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-01-21_88D6AED6-AAE3-47A8-945F-BAC5D18CC436-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-23_8AA9C80B-8086-4258-B064-165E64DFD489-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-10-09_6333B853-DD5F-431B-9776-D0DD0AA92F36-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-09-27_AAFC0E21-EB00-41B1-BB99-8A7EA836FAFC-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-06-30_ed643e6b-d600-fc67-ab67-ee71bf476544-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-29_82014E5F-A5D7-470B-9704-0A2C62DE1FAF-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-25_358590C0-E603-4453-AF40-43233A5A569D-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-09-27_95bf07b9-8374-da8e-2c8a-df8389d8af66-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-01-03_7229a27d-8ce3-9cef-4c13-459251dd765d-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-24_F448B04E-80F1-43F8-B51E-E632AFEDAAF2-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-05-02_4d59bd33-220b-3c15-b397-d2c382e1d52b-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-10-26_1C84EDB5-8335-478C-AAD5-1B0A39601605-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-06_A2D5AC12-22A6-466F-8EA9-B6EA41291F00-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-10_C0787885-B533-45B9-B4F6-B87B6BBBBA14-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-05-28_7dfa3d3e-cd8e-4a2b-c154-da138b816c3b-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-07_e59e3505-c4ed-e43f-9b91-0156f4c6fff9-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-22_a6d815bd-0172-62c1-f6ee-0d4597d9b08b-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-05_A93D25DD-0324-4E77-8739-1236B708FBDB-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-25_9F4D2756-9805-4286-9B07-8E99D07CD26B-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-11_63844fb4-b77c-1ac5-fbcd-18958754fb2c-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-03_7A670931-384A-4EF3-9A28-C5AE27AE7FAC-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-20_db9190f5-09f0-f1e9-677d-ce9d3f8fcc9b-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-11-19_f3f80559-62e3-ee48-4f2a-2287985e8b3e-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-06_2f279aed-cdb4-3e81-3165-68cf87c24ebb-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-22_A92CE97C-7E50-432B-9E69-0C3BDB81120E-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_C2EFDB91-DC1A-4887-B8DC-96914D469752-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-09-25_931E0C3A-FAC5-4579-8E60-435BB5DE6075-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-05-08_693057C1-07C6-4191-A137-7A9D7F9E0ED2-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-01_B4659E3E-4DD2-48F5-BF77-B6D9AB536632-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-08-01_21F1CB4C-F214-4377-848B-B12A330FC0D3-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-12_D38CB693-F31E-4E33-9227-868712075126-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-01_095e506b-5d36-3ccb-f3a8-a65b3ca4577b-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-12-14_d6808987-0228-e059-8828-d87299f06a39-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-24_FF9C1DF3-D4C2-484C-8CE7-6A7A50E2A37F-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export2.zip",
+"datei": "memories/2026-07-22_0E08054C-6331-402E-9D60-927753FBF381-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-25_631791a1-8d3d-f329-3fa4-34cfd6d9258c-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_AE1A71A4-9C13-4BF0-8BBB-7801DF541AC2-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-13_056E2C3D-4AFF-4739-90A5-F3F79A220F14-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-08-19_2470afa5-521f-be87-b186-ef973e94aed8-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-08_DAA31D30-FDD7-4610-9602-ABEDD6D6BFBB-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-12-27_5322f889-591a-2c09-579b-3831ebc8089d-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_F8D5A1FA-49DD-47BF-9017-F3C5C8FFAAEB-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-02-03_C9361341-FEC5-4C3A-A9AB-70FDA78264B9-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-13_266e5b34-b03c-6580-74d6-5a66bdba89f5-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-02-03_faad821f-8930-dca4-0753-08b110e0b188-main.jpg",
+"eingebrannt": false
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-02-22_f3ce78cf-ffc5-07ea-78c7-68e842f54a9e-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-02-18_5D358FC6-5135-4717-A5D3-C4D6154F7131-main.jpg",
+"eingebrannt": true
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-09-19_788f156d-a6b5-47d2-91fe-890349bb1cc3-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-09-29_91dcb1c9-cbe6-3393-e26d-4698a3aaaeea-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-10-30_d6a4e18f-261e-752d-17e6-debfa9c939c8-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-11-02_7eb40410-b447-e276-5179-b6964443e128-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-11-03_b29a66db-4c41-9422-b28e-6296319f1dd8-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-11-18_17c7afeb-159c-ea21-86c3-1e1b81909a3d-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-11-18_cd113e6c-e6df-eb03-e2da-a26d1006ea4f-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-12-17_e77f2116-fdb9-fa23-e67a-5885a60c4f7a-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2023-12-23_d82abdd0-9dec-53ff-738d-a43462c79ce7-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-01-02_dd667004-fc40-dd14-c049-c98a19ea5f5b-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-01-11_12d4b226-b8ef-e5fe-488e-a4c0eccb7d41-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-01-17_dff6df8d-c9a4-eaa0-cda7-7a2c493cdd81-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-02-02_5dc3d3c5-c497-7023-55b9-fc69817285e8-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-02-18_a2cfbcec-af34-134b-1855-c6d6dc9e5414-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-02-25_0f29df75-72d6-2ea9-c543-c30dda1953ac-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-06_4b59f324-ed0b-13b7-fd67-6c42d60a3227-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-08_336324a1-2343-a9a8-0844-1d276d79dd34-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-11_0e3efe9b-6acd-9cbf-12b3-968f658c07b0-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-23_ba3350c8-bd58-1a76-0845-5b698c68fabe-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-30_0b9a84d3-def1-fcff-30e0-fb6330f21f43-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-03-31_b4302875-f37e-9777-d889-24c2bd051777-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-04-14_714f1db9-6927-ba00-0adc-e1b46a19ed6b-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-04-15_631b89f5-c8f2-6805-dbbe-845d454ff1bb-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-04-15_980477f5-2dc6-7833-d60d-1d7c6e1e7763-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-04-16_a3ed36f5-fed7-f201-9692-a50fe627ae6b-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-04-20_ee5588ca-80b0-1359-8329-479d4424e8bc-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-04-23_ef19abd6-9f98-12b1-b388-a483bd3f922d-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-04-30_2036ee3c-e67c-308a-ed0c-5a9e7de98302-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-06-11_709b1ad2-9b72-f8c9-dec4-2ea3504f6ba9-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-06-12_4db7f773-dae3-f228-e2ba-edcef999ff12-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-06-12_bd084da3-a16d-f15a-e625-cd6c442833ef-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-06-12_dfe0f775-8910-2366-3765-d8d50bd7ad05-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-06-12_f7d05885-21c5-c1f3-3c86-fcba730d8c50-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-06-21_c65e1f9b-3c08-773f-24d5-dc0b06b49d46-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-06-29_5bfe68a7-dd88-c4db-958d-19da7f1de7ba-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-01_174dd763-5fd7-0a1f-4f18-59d013d76aed-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-01_1a9cca94-9634-0b82-caf0-f0e7a28845b4-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-01_517f47b5-119b-759f-72f5-80708910ad7b-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-01_85c1bd73-32b4-24f6-6da1-7039111855f7-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-01_a99c0b80-b316-135f-5d42-fad99925496e-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-01_b3d0f2ca-57f9-ea78-9fbd-50f5195cce89-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-03_2b4d0e42-d692-6d44-425b-f750e9a53a74-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-03_b7a38bdc-6594-cc8b-ba51-2ff7ba8c6ae0-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-11_05b172e0-e566-94dc-3ab7-1ded550378e8-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-11_6d217dbd-8626-9895-8ece-452e30d897ca-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-11_e68801d1-ec5f-0923-d42e-5705a6940f93-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-07-15_8ca53bcd-44ed-6441-9a73-298805d8ebea-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-06_ac3ed080-89a5-c543-37e4-abe38da3961d-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-17_19aae703-6bae-b905-8768-dee172375192-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-17_f5e371ea-7caa-1dc5-2394-63e6ffc2b6d7-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-18_40c29cb9-148c-30b9-9b86-3401719a75b3-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-18_a9b99d61-adc7-47c2-a130-c23dead2a251-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-18_db1c900d-934c-7da3-a62d-a52630d0d891-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-18_f9f31280-d412-e903-4c21-4e0ce5759ab7-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-20_5aa49dcf-9761-e7c7-5412-3cb0aef70f35-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-29_0911d522-f945-6faf-52af-0f9c4ae35c22-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-29_5912d473-c862-6277-b99d-41579fa969dd-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-08-29_b70cdb79-3294-2a29-7632-1e3b3c2d437b-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-09-08_15e440d5-4e85-0d79-d5e2-f11bcb437cf5-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-09-14_00802ace-82f2-3374-e547-72a3b21edd5b-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-09-26_17dfefe1-ea1a-5e1e-94b5-3954443e6658-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-10-02_0f0ff108-3835-c5c5-3466-73fdb2a81168-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-10-02_72009f16-efc4-f930-437e-497cde6953b6-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-10-02_943306ed-f80d-d9c6-9146-192c773b2943-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-10-04_6257dfe0-da9d-0454-9cd8-379cd1c05e96-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-10-05_841b8869-8735-5fdf-3e38-2e20d089c8ae-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-10-05_9f5187cb-aa0d-fa8d-01c9-6bd642672a7c-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-10-05_ac8e62e4-3821-7b25-0aec-694d88f3f446-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-09_897e5faa-bd8d-be0b-8297-2de588f02897-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-15_358a254e-1158-622d-ecc5-621678ec0d06-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-15_50b43ac7-439e-d385-dd84-1810b2f377dc-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-15_708b0974-4ad4-d4ca-757a-8d437de16a33-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-15_d9d1a075-6f06-8fd0-5c4d-574ee472cf6b-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-20_2d938e74-8d23-8984-7d9d-bfd61c4a241f-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-20_2ed8fd9a-0e6d-480c-3c4f-9f1dd04cac78-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-22_fe652028-5a0f-91f5-e6ad-a1f3e76a52dc-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-23_8f130df7-f24d-c91e-d68d-2beeeecf2c40-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-24_6cf11dea-790c-4b88-89b6-29b2ecd55dd5-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-11-30_1e3c0273-0a4f-f519-2e09-7097f80696e7-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-12-05_510febbb-2f5b-c914-9e1a-f9c05c6421bf-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-12-07_76209990-a9fc-96b3-428c-cc89758b73bf-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-12-07_f4b07c14-015e-d90a-b858-5653019cb079-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-12-12_bb3b754f-d213-c811-b291-fe4ab38293ec-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-12-15_10dd1dc7-cfc0-d33a-11af-85b68d8f4814-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2024-12-19_c1ccf5f3-7d47-18b5-58ef-1ce53dcd2a23-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-01-11_66cedab7-10f2-a629-fde3-29205ced67e7-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-01-11_75679ccd-5db5-e791-a03c-9697b92a14d0-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-01-11_7d48c9bc-b377-ccec-c560-68792c21d646-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-01-11_b9ee042a-a324-59eb-680e-041806f244fa-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-01-11_c74b2462-eb1b-3683-db50-1bb01e37def4-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-01-11_ecdf17ed-30f9-df3f-3781-9bda50c3a5da-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-01-23_bc45207c-73a3-ed04-1c29-433042f57400-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-02-07_e28ff50c-d9c5-be9e-b299-a15e02a192fd-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-02-11_3ef4cdd5-4a2e-9977-f0ae-288e843846cd-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-02-18_5c931a91-823d-f63d-5b97-5825f3ecc3d0-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-02-20_a96bbb86-020c-a53f-8487-a944eb102b31-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-02-23_a2ee3f75-bd8e-3011-1071-7d1be51f30e2-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-01_08bfa305-aa39-2c2d-303e-d8d1ad8766c9-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-01_4f6dab5c-0f10-9864-5008-9e5b6bb12f01-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-01_8865723a-80ce-fec1-b2ae-609dbe98b3c1-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-01_c9b99b9b-4e86-1916-3b04-7eafeb99da47-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-08_c52897a9-090d-1cd4-5303-c4e2e278a52e-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-08_fc5967fd-ce44-0905-fe02-dbd9ef666672-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-16_44123ec8-ddbe-5df1-4c94-f30954caecfb-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-16_5b0d6706-a56a-6513-e02d-ab5e7b26b254-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-16_77391419-15a2-8111-93c3-6c8e3b1e03a7-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-16_b600af96-9f7b-5dfd-f34d-f27064725b3b-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-17_f5328872-a26a-3e2c-d1cf-86c62b92fa88-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-22_dd0bcc60-6a75-31dc-5ff5-97f76da2b35a-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-22_fb89410a-0e9e-d853-b1e8-86a549b1c318-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-22_fbe6a943-44e0-cecc-8874-e69758c54a4d-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-24_23481b2d-4766-0640-790d-d8c29f207df7-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-24_adfae15d-d42c-2480-5143-221d413c7504-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-24_cacdd876-08af-3dfa-2413-c088b10cc2a8-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-24_f683a921-dff9-a2d3-846d-48fbbe953c71-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-28_0b3ae763-7301-ace1-3ced-07f1e9f28305-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-28_136b3fe9-4ea4-d346-faf9-81f2b823a120-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-28_60b4a117-f4c7-9a52-11ce-130d68c33e16-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-28_8f0e22bc-6fd5-9676-4afa-22e09d9d3c32-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-03-28_a33f39b3-80f9-dc7d-0684-c246e917b2e8-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-01_4919bc6d-80f8-edac-0901-d4d2f14cf607-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-02_1f71e13b-0a73-3b73-d5d8-d474f9d65b8a-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-03_d8b4f9f4-30ce-d253-4fa2-b14c3d3b7158-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-04_cb86f37f-7ed7-0d7a-c68c-5c8383997c4e-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-05_1a1ad3be-c606-d32f-e511-01fcfd743a0e-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-05_6650baee-1ac8-166b-9b3f-5b7c09662e60-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-06_2ad8ec98-f760-0f41-03b7-323cfbedda87-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-06_4f090d1d-b92d-ba75-f1d9-87e1624b191e-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-06_77b3864d-d748-543b-89f2-c251b2a4069c-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-08_354ccd63-b848-2ab1-e6e8-a444b1a2fbfa-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-08_d7ae956b-e71d-ca0e-5e46-bb480dbff6f2-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-08_dfe9d020-106f-381a-fc2b-bf595d050f14-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-09_09412992-04ad-23dd-00b4-5fbe46d180cb-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-09_8298f624-7d40-96fc-b31c-3391eb3abc95-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-10_47e8c642-2187-9ab7-2bd8-02db98bebd92-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-10_5ef1f978-4161-ed11-ea12-9fb6709ca7d5-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-11_37ae35ca-12ed-67a4-60f0-eb95d1ed9741-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-11_39a418f4-d311-e66f-e067-b41636250df1-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-11_7d7dc6c2-5793-2d68-eb89-3ffb42c27389-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-11_868aa18b-43fa-5468-5d45-d7e828702ddf-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-12_1072f14f-5b1c-edad-4de9-2efbb82cd6df-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-12_1b014e50-8c85-5605-4546-b00b540968b1-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-12_25cb4c6f-3453-b126-7f98-6ff11edd86fc-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-12_c12022eb-0edd-a5b5-18f7-d4c3fee7b693-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-12_d2404f5c-11c8-7684-c3d5-1dc27b86aabd-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-13_12043dd4-8da7-45dd-8ba3-a658beb016a8-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-13_1a212e27-2203-f8c5-8a36-17b6d07d5248-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-13_5bdbebd0-4bf6-4948-d630-809827dae15c-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-13_84fdf4b4-9309-f6a3-ab7e-98e6c47f2560-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-13_a429cecb-b6d2-8025-90b7-59184915c9a6-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-13_d6b5219d-7d48-cdbb-4a86-ed457d660e85-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-14_0628e127-32f0-59c4-0f34-6a8c109f4ed1-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-14_2c0e4e46-ea63-70b1-da1c-6e15c69b3ad0-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-14_5c9de68c-5113-fccf-481a-c901dbd3a2e6-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-14_e22e387e-c6c2-1697-60a2-68eddd3b415a-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-19_34ae1e2c-9b45-84ad-f569-55b31284c83b-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-19_4ecc7bdb-dd32-502f-6da7-53c673a288e1-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-19_84d7a48a-ec7c-2ada-9d69-0a4f65d12368-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-22_af2107c5-585e-1561-821b-56bb816dbe47-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-23_b5711e3e-8b1a-d402-3341-29dcdbcb8864-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-23_bc25ee15-ec98-51a6-c21e-a30e2e963e2a-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-23_c483507a-4b31-87b7-d7ba-aee1ebf3bba6-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-25_02dd1b52-27aa-90b3-f864-59d7098dc79b-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-25_4ed6e0b0-3262-a441-a49d-9366fc2bd1ef-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-25_5c6a8f79-90f7-51ea-ab75-3a8bd126baa5-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-25_779f8459-9dd8-2a90-3c42-21f51295099d-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-25_9b62a829-8cfc-aaae-d7a4-7c3869f602f5-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-25_9b9c4807-490c-f03b-0a64-785038254b96-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-25_aeb45071-b0d0-13cd-6d71-974d8414f602-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-25_b57f6970-cb3b-f725-5781-94934e170e7f-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-25_ed0a9574-9503-0b39-7a4c-680accd105f9-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-25_ff386085-f483-ac59-baad-5c7bf9cd2195-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-29_6723f70d-cf59-1a83-75ca-d660ed49cd24-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-30_7ac0cc62-bb4a-d75a-d240-413c7183d6ac-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-30_decf2528-ed9c-5b46-2362-643be402138e-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-04-30_f07dc640-329b-15e5-0c4f-88b3af520d40-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-01_1792d5e1-069d-31b3-3ba7-07578fbc4a58-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-01_fe5cfbef-7c86-45b7-ee03-ef6331b07acf-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-03_dd522290-deaf-d742-145c-588e28cfe5aa-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-03_e7a0596a-73fc-6820-0f70-7184c69336e4-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-11_aada3dbe-b6cb-5ba2-35c2-c98290a8ff3d-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-15_88a33aae-4cd4-5824-7bbf-d94e7f64b9b5-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-17_487b0bae-dc72-1a1a-74e0-895d0c9991e6-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-17_a6f6cc49-ddb2-792b-270b-95cf31c48401-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-21_e754fc61-06da-1380-b112-6e1bdd2932be-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-23_00200c6e-beaf-7fa5-e39e-b45ce403ba91-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-23_02d2fa9b-f7a9-fe79-8341-eac91a58279f-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-23_a4618200-5239-642a-89e9-29c430cef03d-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-23_e405a8d1-57df-ed37-0b45-dd74afc95d18-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-23_efd5d194-4cc8-b2a6-8a6f-96d893f1cefd-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-24_ee0a1555-89f7-0829-eb53-28af0b7e1157-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-25_452c55da-c8e8-13fe-1ff4-e92d407c8a25-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-25_655006e7-9550-8b73-e29e-d2cff00419c6-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-25_6D7EC702-806F-4CB3-BA46-04C40D0FB5B1-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-25_6e80b40a-8fcc-d478-4c5e-3553646c79aa-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-25_db405777-dccc-1a5a-6bcd-1fcce40fb6e5-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-25_dbc07724-e5dc-484c-f0cf-9536d680def2-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-26_25b03c2a-8fb3-0d9b-b5dd-85a800e376fc-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-27_d0581cd6-fe4e-7f74-c6fc-5ce1dda9fdb8-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-28_0970111c-5d5b-70d8-8ce9-d35b64d4200e-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-28_42d5d1fc-8c73-2fcc-a576-17b4ccde3cf6-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-28_563c1141-0ee3-2ddc-8877-b516602bcd6f-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-28_6839ca20-8d38-b922-071d-ca89b5c87340-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-28_95a6f0b5-c9b3-5c11-4c60-8c32318c3b49-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-28_edb4c602-b0cc-86f4-6dd9-c8cb7e55239a-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-29_e0bbf9af-9cf3-84a4-1438-a46879597769-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-05-30_1c6b001d-a53a-a9de-0e89-113645737654-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-01_75bc985a-4c78-5301-0d4c-131e57cfa68f-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-02_c8dcc0fa-fbc5-c3bf-f838-b484042328a4-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-02_f40db6e3-5f2c-a4d9-f73d-708070d9e12e-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-03_0cfca8e6-a018-d586-b677-b0527273a5df-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-03_6f9accec-e6b6-c5ee-316b-15a7e68e0e6c-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-03_c0d3f2f2-52e8-e33e-916a-f79570728ece-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-03_f1a3f4e6-bf04-a5be-aa12-e72bd1790e71-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-04_5513fc5b-4293-8d03-ecf0-5e8d60c74511-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-04_cc2a106c-3959-9eb8-a9a2-637ae968dee3-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-04_ec179553-9ef9-e293-8ee8-fe18e760a83c-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-06_219AD0A2-21CB-43C4-8164-3B90D0C3CD69-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-06_8a1db414-860d-5e9b-65d8-1075f8a4a647-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-06_92c5e8eb-28aa-436c-e6d7-fe1969f820e7-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-06_9681bd18-76df-7200-2147-2be2e55baef6-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-06_9980063d-b0ed-b4a3-a199-667ad8c2ed1a-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-06_a545dc93-4329-7375-0138-a6647aeae9a5-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-07_ce448b2a-6bf0-e87c-61a4-a815d909d8d0-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-08_f5cba5fb-112a-ed8c-6dd2-83ae9e1e6db2-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-09_18c79fe4-36f7-7efb-2124-4cca595d2e76-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-09_91826804-5147-2a3a-276d-f50fb935cc9e-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-09_de427680-8e74-5aa0-eeaf-de0d953ef010-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-11_0AA59390-C738-40A1-8B04-898BAAC478AC-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-11_37F66D8D-96C6-40D6-939F-C13A73E0803B-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-12_0E925D18-6D2C-43EB-A6D6-A25AA29AAB6D-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-13_0725C360-44A9-467E-9CDF-FA8A38405CCD-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-13_CD306163-A8A9-4BA4-B9AA-93F37C559A61-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-13_D14B6B97-F6B7-4569-9C59-85E6A4B43640-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_0A89C22C-0000-46F8-B2C7-67CD13BDCB63-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_107C7C85-F632-459B-AEE3-1883941D925B-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_1A1BF2E2-1A79-468C-9F5F-6C67634CA0BB-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_1A7E3220-D283-4496-9225-9920DE8EC197-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_A82A9CDF-10EC-4B01-8CF7-28A79949B8CB-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_B5C65EF4-268F-4482-8586-94AFABCACD6C-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-14_D7747642-72EC-47A3-94EB-82FF90DC4812-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-15_43CEDFBA-F36A-42C5-83C9-EEF03B3DCB40-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-15_5DBCD3C7-1B6E-473C-9AA9-6E52FE32FC2A-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-16_016C4575-CC39-446D-B1DB-AA3051044320-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-16_5C9FB033-A9F8-47AF-8CD0-C6280348BA3D-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-17_DB7D7662-5B76-49F0-92D2-C989F4398EB4-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-19_9AF52EF9-19A0-43A0-8316-2BEC2EE0FAC7-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-20_C5905098-C342-41F8-B90B-71C78B47D063-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-21_006775FC-8B68-4B46-BD08-CC3791D03237-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-21_88CDA1E4-E74B-4B44-BF6A-5F928E60DB57-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-21_9F454EC9-C17C-4FEF-8F1D-E2BA7CAE3C61-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-22_7383CF88-50CA-48E8-95F7-B254B796C30A-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-22_F38CCCC1-179C-4008-AE7F-7E9CCA8F2BB7-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-23_008EB890-6852-4E73-A507-32F2650BAA88-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-23_3E9FD5DD-A1BE-425D-9BF4-668C5FA32D72-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-23_6F6F5105-FE5D-42A4-A44F-D8DC6F31F827-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-24_A2A91CB3-B1A2-4C81-B8C2-118874D3885E-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-24_C73AE86D-245B-494C-845E-A78073414734-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-24_EE0F3B09-636E-40D1-8B72-8096698A362A-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-25_34214E5C-A41F-4E7E-B42A-9338B21E6038-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-25_8550DF85-C034-4049-BB93-FB8B2AC45763-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-25_CEC97D23-A3EA-41F1-A2AF-1EA3F0204274-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-25_EFC84390-E9A8-427C-9E55-2366F8E3D836-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-29_3C3FA310-BF2B-4056-8840-EC5C17D52834-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-06-29_FD1BE4D5-B88A-483C-87C5-E255DB78D924-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-02_0239D3BA-2ACA-4B01-8352-916C2EAFEA1D-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-02_B47ABE80-EDE6-412A-A942-7C3659687022-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-03_EF91196D-C3F1-4697-9A0F-DB306380526E-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-04_62E2F096-0554-41B5-A587-621D6D49A4F1-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-04_992F399B-6F9C-4A0A-B415-E65F1B2E4C44-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-04_9C0F73AB-9BC9-40E5-9244-0472F77E738A-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-04_F8D56EFE-FCE4-4ACB-BD68-31D1548F8722-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-05_D818F78F-C0EF-4357-9089-C1C50725C8D6-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-06_104E13B7-7212-419A-8FE2-04DF7430306F-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-06_1CAE299F-DCCE-467E-A247-6F5C23B9CA7F-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-06_21A35CAA-6BAD-4442-8782-CBC910CB3ED4-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-06_91A40AB0-8CE7-43E5-AB93-E34C0C55A82F-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-07_29FAC2DC-9A2A-44BB-9E5F-92285DFC175D-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-07_5780A8FC-1082-48C9-B5A1-18095C6FD6F9-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-07_937BB797-D076-41A0-B9F5-F5146CC7F8F1-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-07_AC9BD54F-FAB6-408B-B7CE-4C117C1D2DF0-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-08_50F22C11-4AD4-4D73-869F-2D9F15D042D1-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-08_5DDA5177-186A-4A4E-A91B-5A8A3482E3BA-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-08_9769ED04-0520-44A7-B336-6F57C320DB7C-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-09_BE5C2895-9B41-4E87-96FC-0A2D09567331-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-09_E39167F8-CA8B-4B47-A97E-30075DC7983A-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-09_ED0BB6A9-CCB5-4959-9BE5-9C5F56CC2E59-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-10_9BC99878-F6D0-4B37-A526-05846F2C5653-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-10_A25F01D7-F924-475A-9111-44ABDB40FEFF-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-11_3D50CC0C-D9BC-46B2-A9C8-03BCC7F74731-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-11_4F6C7A6B-5C88-424E-88A1-A8F7D80FF7ED-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-11_6D50677B-55C2-447E-84A2-8CE2CC87C903-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-11_7ECABBA2-32F7-4E6E-A67A-15567A01D0E9-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-12_423386C5-1809-4F6E-B84A-BEFCAB296846-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-12_6FCCF141-A92D-49D7-A7A9-387E86E773CE-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-16_47F05794-CD41-4E85-84A9-EE95E1D00608-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-16_D0A8B5E0-15F5-40F0-8309-1128F09D22BF-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-22_D2E75D43-4BA7-49B2-BCA3-7BF5334CE6C2-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-22_F78CD505-6281-43D5-9212-BE6141AF9917-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-23_29C6FB20-E5F7-4322-AC2D-A84FC1A5E3ED-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-24_08DEE5A8-AA0D-4A27-B601-322A036EC219-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-24_2D76B1FE-FE71-4F5D-A1CF-55EB510823F4-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-24_2EEC905C-BF93-462A-8DCE-8ED59A50F656-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-24_31C51F62-6345-408B-9B9E-20C929A245F4-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-24_692CE6B5-F0AC-46A6-A8C6-272ABC2AC137-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-24_F0BA2701-508A-4E22-8A49-B4AF08481221-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-26_7AF04061-3CD9-46F6-ADD0-0FB0F4E938D3-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-26_F6B27A4D-4925-4CDA-9325-8D21D8A6285B-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-27_4D20220A-86BB-44CE-9FD4-10E0F9D4D283-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-28_7206DE0E-8F4B-4042-89D0-0EDCF6CE8831-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-28_F09139FA-D9AA-43F6-84D0-C34C9FB89365-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-29_1D4DCDC5-1827-4D1A-991B-8B383F028B26-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-29_E3D61FF4-193D-4EE1-A261-5B08836CE084-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-30_01456ECE-5B8F-4443-A3E5-5D40B879D80B-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-30_297ABC7E-2136-4372-992E-7ECDB83ABA13-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-07-30_78CCC3D9-4B88-4491-BE5A-26E747859FFE-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-08-02_A71598FD-4837-422E-B03F-B24F7CD4282E-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-08-07_F1468C31-E4BE-41FB-8102-963BC9894B11-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-08-09_0A06F337-B6E2-4727-8F79-8CBE1EA2323F-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-08-09_F1C0030B-3B1F-4828-B3C7-C826A082E50E-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-08-25_45AC5E8F-4AAB-4B4A-BAC3-3C81594A4436-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-08-25_D2E7D415-77FA-4CD8-9008-11EB0615DE7B-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-08-31_0B930C50-8663-4CDD-A8BD-B76201C92387-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-08-31_487FD29D-67F6-4130-8D5E-1ED960697E9B-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-08-31_699A3633-EFA5-4D37-9886-EF180C775553-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-09-03_84A43DBF-083C-49E8-AB36-6A05A84B09A0-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-09-14_446D0E10-FBD8-4EB8-A41A-4052D48E3CD6-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-09-24_3C6B5F08-7EB4-4EBD-B4E0-29E04139974D-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-10-10_512604BD-D5F5-4610-9288-A1DC1351AAE4-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-10-10_76954C1A-CE3E-46B6-AA79-C7785316A250-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-10-13_E0C6329D-28A8-4133-A356-B4A313E8D2FB-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-10-28_F834C0CA-2664-41B5-A162-1FEA80352E92-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-11-10_319DBA33-71DA-464A-86F1-6CBCF6986A34-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-11-14_51045EE3-B78C-4DB6-B297-BCB0EFB38A1D-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-11-21_F3D215D5-55D3-49B4-9021-7B9029FB7153-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-12-02_362DDDE4-1A17-4DC6-B689-71F9E11200B0-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2025-12-30_0F9915B0-2B2D-4A48-AFBA-ACED92A55759-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-01-25_58C4E94A-CD5C-488A-A2C8-400AC4445D48-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-01-26_3FD2AC04-E9C0-4CF0-81E4-0D002D7CA4A4-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-01-28_8E4676B1-10F6-4062-B336-D3FC4C07CC04-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-16_877183B3-0AC1-4781-922A-C4B32D959701-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-24_B0E1F1D7-1120-494C-8318-6C33C3613A0A-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-24_D46624CD-1C5D-4388-8F0A-BA5EF9B6F3C0-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-25_34027353-0A01-4048-99D7-0B5A2DBE5B5E-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-25_4A932E08-1ABD-404B-874D-6D152E8CFFCD-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-25_53AB45DC-E281-440E-AE9B-20E8002766D1-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-28_04211013-D90D-4A3A-80DE-059A3B1C4FCC-main.jpg",
+"eingebrannt": true,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-28_2E47D260-BD7E-491F-8FCF-3290F3E122EC-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-28_50E863E5-55A1-4CD2-B5A5-54C29FA087B2-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-28_A0EA8C75-EE9B-41E7-B027-A27D0B062040-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-28_F52E0DB7-2804-4185-B273-63A44298A796-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-30_6E5D0BA7-7BF4-4F0E-BFB9-DB992AE04191-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-30_9F9F3C70-9F87-4213-944A-59C880747B5E-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-30_A1BE9F79-C390-440B-9729-41C797AB81EB-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-31_04848E42-F83C-4FA1-B9C1-EFBA19253914-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-31_0D35D206-C9A6-499A-BC3F-FE7BCB1A8F0C-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-31_1E1843A2-9476-46AA-BEF6-83E7446DE19A-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-03-31_2C6BBBFE-993B-46C4-8C2C-793B627884C5-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-04-01_64D7A866-D7BD-483A-AE0D-11FC972DFC6E-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-04-01_8FD799DB-9211-47F4-B679-1A5CC6E47C33-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-04-02_BB3EC89A-D053-4D92-80D1-A7E86263F05F-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-04-04_D2185C37-8A62-4821-BA8D-A3705024F227-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-04-25_5CD6C930-BAE5-4B71-9430-FB652FE4CB58-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-04-30_47802650-729F-4AA5-9D8A-57CFBEB3F854-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+},
+{
+"zip": "export.zip",
+"datei": "memories/2026-05-08_540BCB03-606D-4622-BE7D-8D08BC453BFB-main.jpg",
+"eingebrannt": false,
+"quelle": "Lauf personen 06.10."
+}
+]
+}

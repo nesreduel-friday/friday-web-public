@@ -1,0 +1,6 @@
+piexif==1.1.3
+mutagen==1.48.1
+opencv-python-headless==4.14.0.*
+Pillow==12.3.0
+# Läuft das CLIP-Modell für den Erkenner „eingebrannt/Linse“ (nur hier, nicht in Friday)
+onnxruntime==1.30.0

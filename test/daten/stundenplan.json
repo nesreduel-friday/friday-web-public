@@ -1,0 +1,77 @@
+{
+  "_hinweis": "Aufbau echter Schulmanager-Antworten (schedules/get-actual-lessons), Inhalte erfunden. Echte Namen, Raeume und Kuerzel gehoeren nicht ins Repository.",
+  "data": [
+    {
+      "date": "2026-09-03",
+      "classHour": {"id": 1001, "number": "1"},
+      "type": "regularLesson",
+      "actualLesson": {
+        "room": {"id": 1, "name": "B 2.02"},
+        "subject": {"id": 11, "abbreviation": "ma101", "name": null, "isPseudoSubject": false},
+        "teachers": [{"id": 21, "abbreviation": "MUS", "firstname": "Max", "lastname": "Muster"}],
+        "classes": [{"id": 31, "name": "9a"}],
+        "subjectLabel": "ma101",
+        "comment": null
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "classHour": {"id": 1002, "number": "2"},
+      "type": "regularLesson",
+      "actualLesson": {
+        "room": {"id": 1, "name": "B 2.02"},
+        "subject": {"id": 11, "abbreviation": "ma101", "name": null, "isPseudoSubject": false},
+        "teachers": [{"id": 21, "abbreviation": "MUS", "firstname": "Max", "lastname": "Muster"}],
+        "classes": [{"id": 31, "name": "9a"}],
+        "subjectLabel": "ma101",
+        "comment": null
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "classHour": {"id": 1003, "number": "3"},
+      "type": "substitution",
+      "actualLesson": {
+        "room": {"id": 2, "name": "A 2.02"},
+        "subject": {"id": 12, "abbreviation": "de102", "name": null, "isPseudoSubject": false},
+        "teachers": [{"id": 22, "abbreviation": "BSP", "firstname": "Bea", "lastname": "Beispiel"}],
+        "classes": [{"id": 31, "name": "9a"}],
+        "subjectLabel": "de102",
+        "comment": "Vertretung"
+      },
+      "originalLessons": [
+        {
+          "room": {"id": 2, "name": "A 2.02"},
+          "subject": {"id": 13, "abbreviation": "en103", "name": null, "isPseudoSubject": false},
+          "teachers": [{"id": 23, "abbreviation": "TST", "firstname": "Kontakt A", "lastname": "Test"}]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "classHour": {"id": 1004, "number": "4"},
+      "type": "cancelledLesson",
+      "comment": null,
+      "originalLessons": [
+        {
+          "room": {"id": 3, "name": "B 0.14"},
+          "subject": {"id": 14, "abbreviation": "ch104", "name": null, "isPseudoSubject": false},
+          "teachers": [{"id": 24, "abbreviation": "PRB", "firstname": "Pia", "lastname": "Probe"}]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "classHour": {"id": 1005, "number": "5"},
+      "type": "regularLesson",
+      "actualLesson": {
+        "room": null,
+        "subject": {"id": 15, "abbreviation": "sp105", "name": null, "isPseudoSubject": false},
+        "teachers": [{"id": 25, "abbreviation": "SPL", "firstname": "Sam", "lastname": "Spiel"}],
+        "classes": [{"id": 31, "name": "9a"}],
+        "subjectLabel": "sp105",
+        "comment": null
+      }
+    }
+  ]
+}

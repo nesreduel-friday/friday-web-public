@@ -1,0 +1,155 @@
+#!/usr/bin/env bash
+# Datenschutz-Haken — blockiert Commits, die personenbezogene Daten neu ins Repo bringen.
+#
+# Geprüft wird ausschließlich das Staging (git diff --cached): keine Historie,
+# kein Arbeitsbaum, kein Netz. Erlaubte Werkzeuge: git, grep, awk, sed.
+#
+# Regeln
+#   a) Bilddateien unter test/, snapmem/tests/ oder docs/
+#   b) E-Mail-Adressen außer den Test- und Dienst-Domains des Projekts
+#   c) Telefonnummern (+49 … und 0…-…)
+#   d) Tailnet-Namen (*.ts.net) und Tailnet-IPs (100.64.*.*/10)
+#   e) Begriffe aus .githooks/verboten.txt (Namen, Straße, Ort, …)
+#   f) neu hinzugefügte Binärdateien über 200 KB
+#
+# Textregeln (b–e) prüfen die HINZUGEFÜGTEN Zeilen des Stagings. Ältere, schon
+# committete Zeilen werden nicht erneut angemeckert — sonst wäre keine Datei mehr
+# änderbar, in der noch eine alte Fremdadresse steht. Neue Dateien sind damit
+# vollständig geprüft, denn dort ist jede Zeile hinzugefügt.
+#
+# Ausnahmen: data/ (steht in .gitignore), web/icons/, web/mc/,
+# kern/garantie/vorlagen/, *.svg unter docs/, *.onnx, *.png unter web/.
+
+set -u
+
+FEHLER=0
+MELDUNGEN=""
+
+sag() {   # $1 = Datei, $2 = Regel
+    MELDUNGEN="${MELDUNGEN}  ${1} — ${2}
+"
+    FEHLER=1
+}
+
+melde_pfade() {   # $1 = Regel, stdin = eine Datei je Zeile
+    local regel="$1" f
+    while IFS= read -r f; do
+        [ -n "$f" ] && sag "$f" "$regel"
+    done
+}
+
+# ---------------------------------------------------------------- gestagte Dateien
+DATEIEN=()
+while IFS= read -r -d '' pfad; do
+    DATEIEN+=("$pfad")
+done < <(git diff --cached --name-only -z --diff-filter=ACMR)
+
+[ "${#DATEIEN[@]}" -eq 0 ] && exit 0
+
+# ---------------------------------------------------------------- a) Bilder
+# Ausnahmen: web/icons/, web/mc/, kern/garantie/vorlagen/, *.svg unter docs/
+for f in "${DATEIEN[@]}"; do
+    case "$f" in
+        test/*|snapmem/tests/*|docs/*) ;;
+        *) continue ;;
+    esac
+    klein="${f,,}"
+    case "$klein" in
+        web/icons/*|web/mc/*|kern/garantie/vorlagen/*|docs/*.svg) continue ;;
+        *.jpg|*.jpeg|*.png|*.webp|*.heic)
+            sag "$f" "Bilddatei unter test/, snapmem/tests/ oder docs/ (Regel a: Bilder)" ;;
+    esac
+done
+
+# ---------------------------------------------------------------- Textzeilen des Stagings
+# Eine Zeile je hinzugefügter Zeile: "<datei><TAB><inhalt>". data/ bleibt draußen
+# (steht in .gitignore). Binärdateien haben keine +Zeilen.
+DIFF=$(git diff --cached --no-color --no-ext-diff -U0 --diff-filter=ACMR 2>/dev/null | awk '
+    substr($0, 1, 6) == "+++ b/" { datei = substr($0, 7); next }
+    /^\+/ && datei != "" && datei !~ /^data\// { print datei "\t" substr($0, 2) }
+')
+
+if [ -n "$DIFF" ]; then
+    # ------------------------------------------------------------ b) E-Mail
+    # Erlaubt sind die Test-Domains und die eigenen Dienst-Adressen des Projekts
+    # (hphome, anthropic.com als Herstelleradresse) — keine Freemail- oder Personendaten.
+    PFADE=$(printf '%s\n' "$DIFF" | awk '
+        {
+            p = index($0, "\t")
+            datei = substr($0, 1, p - 1)
+            inhalt = substr($0, p + 1)
+            while (match(inhalt, /[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\.)+[A-Za-z]{2,}/)) {
+                mail = tolower(substr(inhalt, RSTART, RLENGTH))
+                inhalt = substr(inhalt, RSTART + RLENGTH)
+                if (mail !~ /@(([a-z0-9-]+[.])*example([.](com|net|org))?|test|localhost|hphome([.]local)?|anthropic[.]com|uestra[.]de|sbahn-hannover[.]de|c[.]us|g[.]us)$/)
+                    print datei
+            }
+        }' | awk '!gesehen[$0]++')
+    [ -n "$PFADE" ] && melde_pfade "E-Mail-Adresse außerhalb example.*, test, localhost (Regel b)" <<< "$PFADE"
+
+    # ------------------------------------------------------------ c) Telefon
+    PFADE=$(printf '%s\n' "$DIFF" \
+        | grep -E '\+49[0-9 /()-]{8,}|0[1-9][0-9]{3,5}[ /-][0-9]{4,}' | grep -v '1234567890' \
+        | awk -F'\t' '{ print $1 }' | awk '!gesehen[$0]++')
+    [ -n "$PFADE" ] && melde_pfade "Telefonnummer (Regel c)" <<< "$PFADE"
+
+    # ------------------------------------------------------------ d) Tailnet/IP
+    # Die Netzdefinition 100.64.0.0/10 ist der CGNAT-Bereich selbst (SSRF-Schutz im Proxy), keine
+    # Adresse eines Geräts — sie darf dastehen. Einzelne Adressen aus dem Bereich bleiben gesperrt.
+    PFADE=$(printf '%s\n' "$DIFF" \
+        | grep -E '[a-z0-9-]+\.tail[0-9a-z]+\.ts\.net|100\.(6[4-9]|[7-9][0-9]|1[01][0-9]|12[0-7])\.[0-9]+\.[0-9]+' \
+        | grep -vE '100\.(6[4-9]|[7-9][0-9]|1[01][0-9]|12[0-7])\.0\.0/10([^0-9]|$)' \
+        | awk -F'\t' '{ print $1 }' | awk '!gesehen[$0]++')
+    [ -n "$PFADE" ] && melde_pfade "Tailnet-Name oder Tailnet-IP (Regel d)" <<< "$PFADE"
+
+    # ------------------------------------------------------------ e) Begriffe
+    LISTE=".githooks/verboten.txt"
+    # Die echten Namen stehen NICHT im Repo, sondern lokal in data/privat/verboten.txt.
+    PRIVAT="${FRIDAY_PRIVAT_VERBOTEN:-data/privat/verboten.txt}"
+    if [ ! -s "$LISTE" ]; then
+        sag "$LISTE" "fehlt oder ist leer — Regel e kann nicht greifen"
+    else
+        WORTMUSTER=$(mktemp) || WORTMUSTER=""
+        if [ -n "$WORTMUSTER" ]; then
+            # Kommentare und Leerzeilen entfernen; je Zeile ein Begriff.
+            # Repo-Liste und private Liste (falls vorhanden) zusammenführen.
+            { sed -E -e 's/[[:space:]]*#.*$//' -e 's/[[:space:]]+$//' -e '/^$/d' "$LISTE"
+              [ -s "$PRIVAT" ] && sed -E -e 's/[[:space:]]*#.*$//' -e 's/[[:space:]]+$//' -e '/^$/d' "$PRIVAT"
+            } > "$WORTMUSTER"
+            PFADE=$(printf '%s\n' "$DIFF" | awk -F'\t' '$1 != ".githooks/verboten.txt"' \
+                | grep -Fiw -f "$WORTMUSTER" | awk -F'\t' '{ print $1 }' | awk '!gesehen[$0]++')
+            [ -n "$PFADE" ] && melde_pfade "gesperrter Begriff aus .githooks/verboten.txt (Regel e)" <<< "$PFADE"
+            rm -f "$WORTMUSTER"
+        fi
+    fi
+fi
+
+# ---------------------------------------------------------------- f) große Binärdateien
+while IFS=$'\t' read -r hinzu weg f; do
+    [ "$hinzu" = "-" ] || continue                       # "-" = binär, sonst Text
+    [ -n "$f" ] || continue
+    case "$f" in data/*) continue ;; esac
+    klein="${f,,}"
+    case "$klein" in
+        *.onnx) continue ;;
+        web/*.png) continue ;;
+        kern/garantie/vorlagen/*.pdf) continue ;;
+    esac
+    groesse=$(git cat-file -s ":$f" 2>/dev/null || echo 0)
+    if [ "${groesse:-0}" -gt 204800 ]; then
+        sag "$f" "neue Binärdatei über 200 KB (Regel f: große Binärdatei)"
+    fi
+done < <(git diff --cached --numstat --diff-filter=A --no-renames)
+
+# ---------------------------------------------------------------- Ergebnis
+if [ "$FEHLER" -ne 0 ]; then
+    {
+        echo "Datenschutz-Haken: Commit abgelehnt."
+        printf '%s' "$MELDUNGEN"
+        echo "Die Datei aus dem Commit nehmen (git restore --staged <datei>) oder die Daten entfernen."
+        echo "Regeln: .githooks/pre-commit — Begriffe: .githooks/verboten.txt"
+    } >&2
+    exit 1
+fi
+
+exit 0

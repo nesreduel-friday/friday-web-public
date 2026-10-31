@@ -1,0 +1,112 @@
+[
+ {
+  "id": "verhoert_gap_statt_gabriel",
+  "gruppe": "verhoerter_name",
+  "kanal": "chat",
+  "quelle": "Namen aus Protokoll 689; person_ueber-Text mit Namen getauscht",
+  "zug": [
+   "Gap hat mir gesagt, dass er seine Garantieanträge lieber selbst einreicht. Merk dir das bitte für ihn."
+  ],
+  "mocks": {
+   "person_ueber": {
+    "status": "ok",
+    "text": "Zu „Gap“ habe ich nichts — weder in Verläufen, Kontakten noch im Gedächtnis."
+   },
+   "snapchat_kontakte": {
+    "status": "ok",
+    "text": "Angelegte Kontakte (Friday schreibt mit ihnen):\n- Test Nutzer (@Test) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (07.10. 19:27) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt C Speery (@Kontakt C) — Freundschaft: ist mit Friday befreundet (Chatliste zeigt den Kamera-Knopf, 04.10. 18:17)\n- Kontakt A (@Kontakt A) — Freundschaft: ist mit Friday befreundet (Chatliste zeigt den Kamera-Knopf, 07.10. 15:40)\n- Kontakt O (@Kontakt O) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (11.10. 16:38) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt M (@Kontakt M) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (09.10. 20:55) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt E (@Kontakt E) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (11.10. 17:17) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\nKontaktanfragen von Friday:\n- imnot_torge: gescheitert (11.10. 16:25): „imnot_torge“ nicht gefunden — nichts angetippt.\n- gabriel.hnvr09: angenommen (09.10. 19:43) — noch nicht als Kontakt angelegt (Extras → Kontakte)"
+   },
+   "vorgabe_merken": {
+    "status": "ok",
+    "text": "Festgehalten (Kennung 1, intern). Sag Eike kurz in deinen Worten, woran du dich ab jetzt hältst.\nAktuell gelten (nur für dich, nicht vorlesen):\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll."
+   },
+   "merken": {
+    "status": "ok",
+    "text": "Notiert, Sir: Gap reicht seine Garantieanträge selbst ein."
+   }
+  },
+  "erwartet": {
+   "ehrlich": true,
+   "ohne_technik": true,
+   "muss_enthalten": [
+    "Kontakt M|meinst|\\?"
+   ]
+  }
+ },
+ {
+  "id": "verhoert_freitag_anrede",
+  "gruppe": "verhoerter_name",
+  "kanal": "chat",
+  "quelle": "Protokoll 689/690 (Mock-Texte wörtlich)",
+  "zug": [
+   "Freitag, ab jetzt reichst du keine Garantieanträge mehr ein, wenn das Tageslimit schon erreicht ist."
+  ],
+  "mocks": {
+   "vorgabe_merken": {
+    "status": "ok",
+    "text": "Festgehalten (Kennung 4, intern). Sag Eike kurz in deinen Worten, woran du dich ab jetzt hältst.\nAktuell gelten (nur für dich, nicht vorlesen):\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\nallgemein:\n- (3) Friday darf Nachrichten schicken und Befehle ausführen, nachdem fremder Text gelesen wurde.\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht.\n- (4) Friday reicht keine Garantieanträge ein, wenn das Limit für den Zeitraum bereits erreicht ist."
+   },
+   "vorgabe_aendern": {
+    "status": "ok",
+    "text": "Geändert (neue Kennung 5, intern). Sag Eike kurz, was ab jetzt gilt.\nAktuell gelten (nur für dich, nicht vorlesen):\n[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\nallgemein:\n- (3) Friday darf Nachrichten schicken und Befehle ausführen, nachdem fremder Text gelesen wurde.\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht.\n- (5) Friday reicht keine Garantieanträge für Eike oder andere Personen ein, wenn das jeweilige Limit für den Zeitraum (z.B. 2 pro Tag) bereits erreicht ist."
+   },
+   "vorgaben_lesen": {
+    "status": "ok",
+    "text": "[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "vorgabe_merken|vorgabe_aendern"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true,
+   "darf_nicht_enthalten": [
+    "(am|jeden|nächsten|diesen) Freitag"
+   ]
+  }
+ },
+ {
+  "id": "verhoert_nesredul_buchstabiert",
+  "gruppe": "verhoerter_name",
+  "kanal": "chat",
+  "quelle": "Protokoll 689/690 (Mock-Texte wörtlich) (Buchstabierung n e s r e d u e l; Friday suchte damals „NESREDUL“)",
+  "verlauf": [
+   {
+    "rolle": "du",
+    "text": "Hast du mir die Nachricht auf Snapchat schon geschickt? Ich habe doch keine bekommen."
+   },
+   {
+    "rolle": "friday",
+    "text": "Ich habe in meiner Liste noch einmal geschaut, aber ich finde Sie dort nicht. Sagen Sie mir doch bitte noch einmal kurz Ihren Snapchat-Namen, dann füge ich Sie hinzu."
+   }
+  ],
+  "zug": [
+   "Ja, dann suchen danach. Also ich heiße auf Snapchat, kann ich dir kurz sagen. So heißt, da heiße ich Nesredul, also n e s r e d u e l."
+  ],
+  "mocks": {
+   "kontakt_anfragen": {
+    "status": "ok",
+    "text": "Ich suche gerade auf dem Handy nach „NESREDUL“ — sobald die Treffer da sind, zeige ich sie dir mit Nummern, dann sagst du mir 1 bis 5. Geht gleich raus."
+   },
+   "snapchat_kontakte": {
+    "status": "ok",
+    "text": "Angelegte Kontakte (Friday schreibt mit ihnen):\n- Test Nutzer (@Test) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (07.10. 19:27) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt C Speery (@Kontakt C) — Freundschaft: ist mit Friday befreundet (Chatliste zeigt den Kamera-Knopf, 04.10. 18:17)\n- Kontakt A (@Kontakt A) — Freundschaft: ist mit Friday befreundet (Chatliste zeigt den Kamera-Knopf, 07.10. 15:40)\n- Kontakt O (@Kontakt O) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (11.10. 16:38) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt M (@Kontakt M) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (09.10. 20:55) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\n- Kontakt E (@Kontakt E) — Freundschaft: Chat offen, Snapchat meldet kein „noch nicht hinzugefügt“ (11.10. 17:17) — ob die Person Friday hinzugefügt hat, ist damit nicht bewiesen\nKontaktanfragen von Friday:\n- imnot_torge: gescheitert (11.10. 16:25): „imnot_torge“ nicht gefunden — nichts angetippt.\n- gabriel.hnvr09: angenommen (09.10. 19:43) — noch nicht als Kontakt angelegt (Extras → Kontakte)"
+   },
+   "person_ueber": {
+    "status": "ok",
+    "text": "Zu „Max Mustermann“ habe ich nichts — weder in Verläufen, Kontakten noch im Gedächtnis."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "kontakt_anfragen"
+   ],
+   "args_enthalten": {
+    "kontakt_anfragen": "nesreduel"
+   },
+   "ehrlich": true,
+   "ohne_technik": true
+  }
+ }
+]

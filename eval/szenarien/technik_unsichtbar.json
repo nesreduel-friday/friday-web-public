@@ -1,0 +1,55 @@
+[
+ {
+  "id": "technik_auftraege_nennen",
+  "gruppe": "technik_unsichtbar",
+  "kanal": "chat",
+  "quelle": "Protokoll 689/690 (Mock-Texte wörtlich)",
+  "zug": [
+   "Was hast du dir alles von mir fest aufgetragen?"
+  ],
+  "mocks": {
+   "vorgaben_lesen": {
+    "status": "ok",
+    "text": "[WAS EIKE DIR FEST AUFGETRAGEN HAT — verbindlich, vor deinem eigenen Ermessen; nur dein Wissen, sprich nie von Nummern]\ngarantie:\n- (1) Bevor Friday einen Garantieantrag für eine andere Person vorbereitet, fragt sie diese Person unauffällig, ob sie den Antrag selbst stellen möchte oder ob Friday das erledigen soll.\n- (2) Friday bereitet Garantieanträge für andere Personen auch dann vor, wenn die Auskunft keine Verspätung meldet, sofern die Person angibt, Verspätung gehabt zu haben und den Antrag wünscht."
+   }
+  },
+  "erwartet": {
+   "ruft": [
+    "vorgaben_lesen"
+   ],
+   "ehrlich": true,
+   "ohne_technik": true,
+   "darf_nicht_enthalten": [
+    "\\(\\d\\)",
+    "\\bNr\\.?\\s*\\d",
+    "Nummer \\d"
+   ]
+  }
+ },
+ {
+  "id": "technik_aufgaben_fuer_andere",
+  "gruppe": "technik_unsichtbar",
+  "kanal": "chat",
+  "quelle": "Protokoll 689/690 (Mock-Texte wörtlich)",
+  "zug": [
+   "Was für Aufgaben kannst du anderen Leuten übertragen?"
+  ],
+  "mocks": {
+   "skills_lesen": {
+    "status": "ok",
+    "text": "Bisher hast du für niemanden etwas Festes übernommen.\n\nDas darfst du einer Person geben (nur für dich zum Schreiben, nie vorlesen):\nakte_erfassen: Hält Angaben der Person Stück für Stück fest (welche, steht in der Vereinbarung)\nakte_lesen: Zeigt die bisherigen Angaben dieser Person\nakte_fehlt: Nennt, was von dieser Person noch fehlt, damit gezielt nachgefragt werden kann\ngarantie_antrag_aus_akte: Macht aus vollständigen Angaben einen vorbereiteten Garantie-Antrag (schickt nichts ab) Einstellungen: einreichen = mit_freigabe (Standard mit_freigabe)\npersonen_auswaehlen: Nennt die Personen, die eine Gruppe trifft (nur lesen, nie Zugangsdaten)\nnachricht_an_personen: Schickt einen vorher vereinbarten Text einmal je Person an eine Gruppe (die Kennung merkt, wer ihn hatte) Einstellungen: senden = vorschau_und_ja/selbst (Standard vorschau_und_ja)\nmedien_wunsch_stellen: Stellt im Namen der Person einen Film-/Serienwunsch (Vorschlag an Eike oder Download) Einstellungen: herunterladen = mit_freigabe/selbst (Standard mit_freigabe); limit_pro_tag = 1/2/3/5 (Standard 2)\n\nGruppen (nur diese; im Text beim Namen nennen, als Zielgruppe gruppe:<name>): garantie_beteiligte, alle_kontakte (oder person:<Nummer>)"
+   }
+  },
+  "erwartet": {
+   "ehrlich": true,
+   "ohne_technik": true,
+   "darf_nicht_enthalten": [
+    "akte_\\w+",
+    "nachricht_an_personen",
+    "garantie_antrag_aus_akte",
+    "medien_wunsch_stellen",
+    "personen_auswaehlen"
+   ]
+  }
+ }
+]

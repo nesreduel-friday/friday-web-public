@@ -1,0 +1,30 @@
+fastapi==0.141.1
+uvicorn[standard]==0.34.0
+# Verbindung zu Gemini Live — dieselbe Version wie in seminar-ki
+websockets==14.1
+# Chat, Webseiten lesen, TestClient
+httpx==0.28.1
+# Zeitzonendaten: das schlanke Python-Image bringt keine mit
+tzdata==2025.2
+# MCP-Client für das Langzeitgedächtnis (Graphiti) und später weitere Werkzeuge
+mcp==2.2.0
+# Nur lesend: Übersicht des Wissensgraphen nach Typen (Gedächtnis-Seite)
+falkordb==1.7.1
+# Datei-Uploads (WhatsApp-Verläufe)
+python-multipart==0.0.32
+# iCloud-Kalender über CalDAV — Apple bietet keine eigene API
+caldav==1.6.0
+# Internetsuche ohne Schlüssel und Konto (DuckDuckGo)
+ddgs==9.16.0
+# Web Push (Benachrichtigungen aufs Handy) — Verschlüsselung nach RFC 8291
+pywebpush==2.0.0
+# Schulbücher: PDF-Seiten als Bild (ohne Systempakete) und zuschneiden
+pypdfium2==4.30.1
+# Bahn-Fahrgastrechte: Werte ins DB-Formular schreiben und das Anschreiben als PDF-Seite (reines Python)
+pypdf==6.19.0
+Pillow==12.3.0
+# Gruppenordner-Indexer: Text aus PowerPoint- und Word-Dateien lesen (reines Python)
+python-pptx==1.0.2
+python-docx==1.1.2
+# PDF aus dem Chat: reines Python mit Tabellen (keine Systempakete, kein Chromium) — am 30.10.2026 im Container geprüft
+fpdf2==2.8.9

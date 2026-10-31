@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0a0d12">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Friday">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="stylesheet" href="/app.css">
+<title>Friday</title>
+</head>
+<body>
+  <header class="kopf">
+    <div class="marke">
+      <button id="kreis" class="reaktor" type="button" aria-label="Gespräch mit Friday starten" aria-pressed="false"></button>
+      <span class="marke-text">Friday</span>
+    </div>
+    <div class="zustand" id="zustand-server"><span id="punkt" class="punkt"></span><span id="zustand">prüfe …</span></div>
+    <div class="zustand gespraech" id="gespraech-status" role="status" hidden><span id="gespraech-status-text"></span></div>
+  </header>
+
+  <!-- Friday will etwas am Gerät öffnen: iOS braucht dafür einen Tipp, also bleibt der Knopf auf jeder
+       Seite stehen, bis er gedrückt ist (web/chat.js füllt ihn). -->
+  <div id="oeffnen-hier" class="oeffnen-hier" hidden></div>
+
+  <main>
+    <section id="uebersicht" class="seite">
+      <div class="ueb-kopf">
+        <h1 id="ueb-datum">Heute</h1>
+      </div>
+      <div id="ueb-vorschau" class="ueb-vorschau" role="status" hidden>
+        <span id="ueb-vorschau-text"></span>
+        <button id="ueb-vorschau-ende" class="leise-knopf" type="button">Beenden</button>
+      </div>
+      <a id="live-zeile" class="live-zeile" href="#chat" hidden>
+        <span class="wer"></span><span class="t"></span>
+      </a>
+      <div id="karten" class="karten" aria-live="polite"></div>
+      <p id="ueb-hinweis" class="ueb-hinweis" hidden></p>
+    </section>
+
+    <section id="chat" class="seite spalte" hidden>
+      <div id="chat-live" class="chat-live" role="status" hidden>
+        <span class="punkt gut"></span>
+        <span id="chat-live-text">Gespräch läuft</span>
+        <button id="chat-live-ende" class="leise-knopf" type="button">Beenden</button>
+      </div>
+      <div id="chat-verlauf" class="verlauf" aria-live="polite">
+        <p class="leer">Schreib Friday oder tipp oben auf den Kreis, um zu sprechen.</p>
+      </div>
+      <div class="bedienung">
+        <label class="klein chat-modell">Antwortet
+          <select id="chat-backend" aria-label="Modell des Chats">
+            <option value="gemini">Gemini</option>
+            <option value="deepseek">DeepSeek</option>
+          </select>
+        </label>
+        <div id="chat-anhang" class="anhang" hidden></div>
+        <form id="chat-form" class="eingabe">
+          <button type="button" id="chat-bild-auf" class="rund klein" aria-label="Bild oder PDF anhängen">Datei</button>
+          <input id="chat-bild-datei" type="file" accept="image/*,application/pdf" hidden>
+          <textarea id="chat-text" rows="1" placeholder="Schreib Friday — oder füg Text oder einen Link ein …"></textarea>
+          <button type="submit" id="chat-senden">Senden</button>
+        </form>
+        <div class="chat-reihe">
+          <label class="check"><input type="checkbox" id="ptt"> Push-to-Talk <span class="leise">gegen Raumlärm</span></label>
+          <button id="chat-neu" class="leise-knopf" type="button">Chat leeren</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="gedaechtnis" class="seite" hidden>
+      <h1>Gedächtnis</h1>
+
+      <div id="g-vorschlaege-block" class="block" hidden>
+        <h2>Vorschläge <span class="leise">— gelten erst, wenn du zustimmst</span></h2>
+        <div id="g-vorschlaege" class="liste"></div>
+      </div>
+
+      <div class="reiter" role="tablist">
+        <button type="button" data-reiter="wissen" class="aktiv">Wissen</button>
+        <button type="button" data-reiter="notizbuch">Notizbuch</button>
+        <button type="button" data-reiter="bilder">Bilder</button>
+        <button type="button" data-reiter="verlaeufe">Verläufe</button>
+        <button type="button" data-reiter="gespraeche">Gespräche</button>
+        <button type="button" data-reiter="gedanken">Gedanken</button>
+      </div>
+
+      <div id="r-wissen" class="reiter-inhalt">
+        <form id="g-graph-form" class="wissen-suche" role="search">
+          <input id="g-graph-frage" type="search" placeholder="Frag das Gedächtnis" maxlength="500" autocomplete="off" aria-label="Frage ans Gedächtnis">
+          <button type="submit">Fragen</button>
+        </form>
+        <section id="w-seite" class="seite" hidden></section>
+        <section id="w-antwort" class="antwort" aria-live="polite" hidden>
+          <button type="button" id="w-zurueck" class="w-zurueck">‹ Gedächtnis</button>
+          <p id="w-frage" class="w-frage"></p>
+          <section id="w-treffer" class="abschnitt" hidden></section>
+          <section class="abschnitt">
+            <h2 id="w-antwort-titel">Antwort</h2>
+            <div id="w-lead" class="lead"></div>
+          </section>
+          <section id="w-belege-abschnitt" class="abschnitt" hidden>
+            <h2>Belege</h2>
+            <ul id="w-belege" class="belege"></ul>
+            <button type="button" id="w-mehr" class="mehr" hidden></button>
+            <ul id="w-weitere" class="belege weitere" hidden></ul>
+          </section>
+        </section>
+        <div id="w-start">
+          <section id="w-fokus" class="abschnitt" hidden></section>
+          <button type="button" id="w-du" class="profil" hidden></button>
+          <div id="w-abschnitte"></div>
+          <details id="w-alle" class="alle">
+            <summary>Alle Einträge ansehen</summary>
+            <div id="w-typen" class="chips"></div>
+            <div id="wissen-liste" class="liste"></div>
+          </details>
+        </div>
+        <p id="g-graph-stand" class="leer-klein"></p>
+      </div>
+
+      <div id="r-notizbuch" class="reiter-inhalt" hidden>
+        <p class="leise">Was du Friday ausdrücklich gesagt hast. Gilt sofort, wird nie gelöscht, nur überholt.</p>
+        <div id="g-fakten" class="liste"><p class="leer-klein">Noch nichts gemerkt.</p></div>
+        <button id="g-verdichten" class="leise-knopf" type="button">Doppeltes zusammenführen</button>
+        <div id="g-verdichten-status" class="ausgabe" hidden></div>
+        <form id="g-neu" class="neu-fakt">
+          <input id="g-thema" type="text" placeholder="Thema, z.B. Kaffee" maxlength="200" autocomplete="off">
+          <input id="g-inhalt" type="text" placeholder="Was gilt, z.B. schwarz" maxlength="2000" autocomplete="off">
+          <button type="submit">Merken</button>
+        </form>
+        <h2 class="leise">Vorgaben</h2>
+        <p class="leise">Verbindliche Anweisungen an Friday („künftig immer …“), per Zuruf angelegt. Widerrufen löscht nichts, sie gelten nur nicht mehr.</p>
+        <div id="g-vorgaben" class="liste"><p class="leer-klein">Keine Vorgaben.</p></div>
+        <form id="g-vorgabe-form" class="neu-fakt">
+          <input id="g-vorgabe-id" type="hidden" value="">
+          <p id="g-vorgabe-titel" class="leise">Neue Vorgabe</p>
+          <select id="g-vorgabe-bereich" aria-label="Bereich">
+            <option value="allgemein">allgemein</option><option value="antworten">antworten</option>
+            <option value="garantie">garantie</option><option value="snapchat">snapchat</option>
+            <option value="erinnerungen">erinnerungen</option><option value="schule">schule</option>
+            <option value="sonstiges">sonstiges</option>
+          </select>
+          <input id="g-vorgabe-text" type="text" placeholder="Anweisung" maxlength="400" autocomplete="off">
+          <button type="submit" id="g-vorgabe-ok">Anlegen</button>
+          <button type="button" id="g-vorgabe-abbruch" class="leise-knopf" hidden>Abbrechen</button>
+        </form>
+        <div id="g-vorgabe-status" class="ausgabe status-fehler" hidden></div>
+      </div>
+
+      <div id="r-bilder" class="reiter-inhalt" hidden>
+        <div id="b-raster" class="raster"><p class="leer-klein">Noch keine Bilder.</p></div>
+        <div id="b-detail" class="detail" hidden></div>
+      </div>
+
+      <div id="r-verlaeufe" class="reiter-inhalt" hidden>
+        <p class="leise">Lade WhatsApp-Verläufe hoch (Export ohne Medien, .txt oder .zip). Friday liest sie ein,
+          du ordnest die Absender Personen zu, dann wertet Friday sie im Hintergrund aus. Die Verläufe bleiben
+          auf dem Server; ins Gedächtnis kommen nur Vorschläge, die du bestätigst.</p>
+        <label id="v-hochladen" class="hochladen">
+          <input id="v-datei" type="file" accept=".txt,.zip" multiple hidden>
+          <span>Verläufe auswählen …</span>
+        </label>
+        <div id="v-status" class="ausgabe" hidden></div>
+        <div id="v-laeuft" class="ausgabe" hidden></div>
+        <div id="v-stand" class="leer-klein"></div>
+
+        <div id="v-offen-block" class="block" hidden>
+          <h2>Wer ist wer? <span class="leise">— ordne jeden Absender zu</span></h2>
+          <div id="v-offen" class="liste"></div>
+        </div>
+
+        <div id="v-personen-block" class="block" hidden>
+          <h2>Personen</h2>
+          <div id="v-personen" class="liste"></div>
+        </div>
+
+        <div id="v-chats-block" class="block" hidden>
+          <h2>Verläufe</h2>
+          <div id="v-chats" class="liste"></div>
+        </div>
+        <button id="v-auswerten" class="voll-knopf" hidden>Auswertung starten</button>
+      </div>
+
+      <div id="r-gespraeche" class="reiter-inhalt" hidden>
+        <div id="g-gespraeche" class="liste"><p class="leer-klein">Noch keine Gespräche.</p></div>
+      </div>
+
+      <div id="r-gedanken" class="reiter-inhalt" hidden>
+        <div class="block">
+          <div class="kopfzeile">
+            <label><input id="gd-an" type="checkbox"> Friday denkt alle 2 Stunden von selbst nach</label>
+            <button id="gd-jetzt" type="button">Jetzt nachdenken</button>
+          </div>
+          <div class="kopfzeile">
+            <label>Denken mit
+              <select id="gd-backend" aria-label="Modell der Denkrunde">
+                <option value="gemini">Gemini (Standard)</option>
+                <option value="opencode">OpenCode (freies Modell)</option>
+                <option value="deepseek">DeepSeek (mit Werkzeugen)</option>
+              </select>
+            </label>
+          </div>
+          <p id="gd-backend-hinweis" class="klein" hidden>Achtung: Freie Modelle können auf Eingaben trainieren.
+            Die Runde sieht deine Vorgaben, deine Erinnerungen, Notizbuch-Einträge, die du oder Friday im Gespräch mit dir gemerkt
+            haben, die Titel deiner eigenen offenen Fäden und Gedanken aus früheren OpenCode-Runden. Nicht dabei: Gedanken aus
+            Gemini-Runden, Gespräche (auch Personen-Chats), WhatsApp- und andere Personendaten, Mails und gelesener Fremdtext,
+            Stände der Fäden. Sie hat keine Werkzeuge und gibt keine Hinweise; ihre Vorschläge (höchstens 2) startet Friday
+            nur auf deinen Tipp in der App oder dein ausdrückliches Ja.</p>
+        </div>
+        <p id="gd-stand" class="klein"></p>
+        <h2>Fragen an dich</h2>
+        <div id="gd-fragen" class="liste"><p class="leer-klein">Friday hat gerade keine Fragen.</p></div>
+        <h2>Fäden</h2>
+        <form id="gd-faden-form" class="wissen-suche">
+          <input id="gd-faden-titel" type="text" maxlength="80" placeholder="Thema zum Nachdenken" autocomplete="off" aria-label="Thema">
+          <input id="gd-faden-aufgabe" type="text" maxlength="400" placeholder="Was soll Friday herausfinden?" autocomplete="off" aria-label="Aufgabe">
+          <button type="submit">Anlegen</button>
+        </form>
+        <div id="gd-faeden" class="liste"><p class="leer-klein">Noch keine Fäden.</p></div>
+        <h2>Gedanken</h2>
+        <div id="gd-liste" class="liste"><p class="leer-klein">Noch keine Gedanken.</p></div>
+        <h2>Runden</h2>
+        <div id="gd-runden" class="liste"></div>
+      </div>
+    </section>
+
+    <section id="freigaben" class="seite" hidden>
+      <a class="zurueck" href="#einstellungen">‹ Mehr</a>
+      <h1>Freigaben</h1>
+      <p class="leise">Was Friday darf. Alles ist aus, bis du es einschaltest. Tipp auf einen Eintrag für Details.</p>
+      <div id="k-liste" class="liste"><p class="leer-klein">lädt …</p></div>
+    </section>
+
+    <section id="studio" class="seite" hidden>
+      <h1>Extras</h1>
+      <div class="reiter" role="tablist">
+        <button type="button" data-reiter="studio" class="aktiv">Studio</button>
+        <button type="button" data-reiter="garantie">Garantie</button>
+        <button type="button" data-reiter="pc">PC</button>
+        <button type="button" data-reiter="hphome">hphome</button>
+        <button type="button" data-reiter="kontakte">Kontakte</button>
+        <button type="button" data-reiter="memories">Memories</button>
+      </div>
+      <div id="r-studio" class="st">
+        <div class="st-nav" id="st-nav" role="tablist">
+          <button type="button" data-ansicht="ueberblick" class="aktiv">Überblick</button>
+          <button type="button" data-ansicht="videos">Videos</button>
+          <button type="button" data-ansicht="publikum">Publikum</button>
+          <button type="button" data-ansicht="werkstatt">Werkstatt</button>
+        </div>
+        <div class="chips st-zeit" id="st-zeit" aria-label="Zeitraum">
+          <button type="button" data-tage="7">7 Tage</button>
+          <button type="button" data-tage="28" class="aktiv">28 Tage</button>
+          <button type="button" data-tage="90">90 Tage</button>
+          <button type="button" data-tage="365">1 Jahr</button>
+          <button type="button" data-tage="0">Alles</button>
+        </div>
+        <div id="studio-liste" class="liste"><p class="leer-klein">lädt …</p></div>
+      </div>
+      <div id="r-garantie" hidden>
+        <div id="garantie-inhalt" class="liste"><p class="leer-klein">lädt …</p></div>
+      </div>
+      <div id="r-pc" hidden>
+        <div id="pc-inhalt" class="liste"><p class="leer-klein">lädt …</p></div>
+      </div>
+      <div id="r-hphome" hidden>
+        <div class="unterreiter" role="tablist">
+          <button type="button" data-unterreiter="server" class="aktiv">Server</button>
+          <button type="button" data-unterreiter="medien">Medien</button>
+        </div>
+        <div id="hp-server">
+          <div id="hp-kopf"></div>
+          <div id="hp-dienste" class="liste"><p class="leer-klein">lädt …</p></div>
+          <h2 class="hp-titel">Claude-Sitzungen</h2>
+          <div id="hphome-claude" class="liste"><p class="leer-klein">lädt …</p></div>
+          <h2 class="hp-titel">Werkbank</h2>
+          <div id="hphome-werkbank" class="liste"><p class="leer-klein">lädt …</p></div>
+          <div id="hp-tailnet"></div>
+          <div id="hp-sicherung"></div>
+          <div id="hp-speicher"></div>
+        </div>
+        <div id="hp-medien" hidden>
+          <h2 class="hp-titel">Duplikate in Downloads</h2>
+          <div id="hp-duplikate" class="liste"><p class="leer-klein">lädt …</p></div>
+          <h2 class="hp-titel">Serie/Film endgültig löschen</h2>
+          <input id="hp-medien-suche" type="search" placeholder="Film/Serie suchen" maxlength="200" autocomplete="off" aria-label="Film oder Serie suchen">
+          <div id="hp-loeschliste" class="liste"><p class="leer-klein">lädt …</p></div>
+        </div>
+      </div>
+      <div id="r-kontakte" hidden>
+        <div id="kontakte-inhalt" class="liste"><p class="leer-klein">lädt …</p></div>
+      </div>
+      <div id="r-memories" hidden>
+        <div id="memories-inhalt"><p class="leer-klein">lädt …</p></div>
+      </div>
+    </section>
+
+    <section id="schule" class="seite" hidden>
+      <div class="bildung-kopf" role="tablist">
+        <button type="button" id="bk-schule" class="aktiv" data-bildung="schule"><h1>Schule</h1></button>
+        <button type="button" id="bk-uni" data-bildung="uni"><h1>Uni</h1></button>
+      </div>
+      <div id="bildung-uni" hidden>
+        <p id="uni-datum" class="leer-klein"></p>
+        <p class="leer-klein">Hier folgt die Anbindung an Stud.IP und anderes.</p>
+      </div>
+      <div id="bildung-schule">
+      <div class="reiter" role="tablist">
+        <button type="button" data-reiter="ha" class="aktiv">HA</button>
+        <button type="button" data-reiter="noten">Noten</button>
+        <button type="button" data-reiter="arbeiten">Arbeiten</button>
+        <button type="button" data-reiter="lernen">Lernen</button>
+      </div>
+      <div id="r-ha">
+        <div id="ha-inhalt" class="liste"><p class="leer-klein">lädt …</p></div>
+      </div>
+      <div id="r-noten" hidden>
+        <div id="noten-inhalt" class="liste"><p class="leer-klein">lädt …</p></div>
+      </div>
+      <div id="r-arbeiten" hidden>
+        <div id="arbeiten-inhalt" class="liste"><p class="leer-klein">lädt …</p></div>
+      </div>
+      <div id="r-lernen" hidden>
+        <div id="lernen-inhalt" class="liste"><p class="leer-klein">lädt …</p></div>
+      </div>
+      </div>
+    </section>
+
+    <section id="einstellungen" class="seite" hidden>
+      <h1>Einstellungen</h1>
+
+      <a class="menue-zeile" href="#freigaben">
+        <span><b>Freigaben</b><span class="leise"> — was Friday darf</span></span>
+        <span class="leise">›</span>
+      </a>
+
+      <div class="block">
+        <h2>Benachrichtigungen</h2>
+        <p id="p-status" class="leise">wird geprüft …</p>
+        <div class="knoepfe">
+          <button id="p-an" type="button" hidden>Einschalten</button>
+          <button id="p-test" type="button" hidden>Testnachricht</button>
+          <button id="p-aus" class="weg" type="button" hidden>Ausschalten</button>
+        </div>
+      </div>
+
+      <details id="n-menue" class="menue">
+        <summary>Was Friday dir schickt <span id="n-kurz" class="leise"></span></summary>
+        <div id="n-liste" class="liste"><p class="leer-klein">lädt …</p></div>
+        <div class="n-ruhe">
+          <div class="n-zeile">
+            <span><b>Ruhezeit</b><span class="leise">Dann bleibt es still.</span></span>
+            <label class="schalter"><input id="n-ruhe" type="checkbox" aria-label="Ruhezeit an"><span class="bahn"></span></label>
+          </div>
+          <div id="n-zeiten" class="w-spanne" hidden>
+            <span>von</span><input id="n-ab" class="zeitwahl" type="time" step="300" aria-label="Ruhe ab">
+            <span>bis</span><input id="n-bis" class="zeitwahl" type="time" step="300" aria-label="Ruhe bis">
+          </div>
+          <p class="leer-klein">Erinnerungen und Warnungen zu einer Fahrt, die gleich weg ist, kommen auch dann.</p>
+        </div>
+      </details>
+
+      <details id="w-menue" class="menue">
+        <summary>Abfahrten im Blick <span id="w-kurz" class="leise"></span></summary>
+        <p class="leer-klein">Friday meldet sich aufs Handy, wenn ein Bus oder eine Bahn, auf die du wartest,
+          Verspätung hat oder ausfällt. Sag es ihr im Gespräch — oder trag es hier ein.</p>
+        <div id="w-liste" class="liste"><p class="leer-klein">lädt …</p></div>
+        <div class="w-form">
+          <input id="w-halt" class="zeitwahl breit" type="text" placeholder="Haltestelle" aria-label="Haltestelle">
+          <input id="w-linie" class="zeitwahl" type="text" placeholder="Linie" aria-label="Linie">
+          <input id="w-richtung" class="zeitwahl" type="text" placeholder="Richtung" aria-label="Richtung">
+          <div class="w-spanne breit">
+            <span>zwischen</span><input id="w-ab" class="zeitwahl" type="time" step="300" value="07:00" aria-label="ab">
+            <span>und</span><input id="w-bis" class="zeitwahl" type="time" step="300" value="08:00" aria-label="bis">
+          </div>
+          <label class="check klein"><input id="w-werktags" type="checkbox" checked><span>nur werktags</span></label>
+          <button id="w-neu" type="button">Merken</button>
+        </div>
+        <p id="w-hinweis" class="leer-klein" hidden></p>
+      </details>
+
+      <div class="block kompakt">
+        <div class="kopfzeile">
+          <h2>Morgenbriefing</h2>
+          <label class="schalter"><input id="b-an" type="checkbox" aria-label="Morgenbriefing an"><span class="bahn"></span></label>
+        </div>
+        <div class="kopfzeile">
+          <span class="leise">täglich um <input id="b-uhrzeit" class="zeitwahl" type="time" step="300" aria-label="Uhrzeit"></span>
+          <button id="b-vorschau" class="leise-knopf" type="button">Vorschau</button>
+        </div>
+        <p id="b-hinweis" class="leise" hidden></p>
+        <div id="b-ausgabe" class="ausgabe" hidden></div>
+      </div>
+
+      <details id="s-menue" class="menue">
+        <summary>Schlüssel <span id="s-kurz" class="leise"></span></summary>
+        <div id="s-liste" class="liste"><p class="leer-klein">lädt …</p></div>
+        <p id="s-pool-info" class="leise"></p>
+        <div class="cl-zeile">
+          <label><input type="checkbox" id="s-pool-automatik"> Automatisch neue Schlüssel anlegen</label>
+          <button type="button" id="s-pool-anlegen">Jetzt anlegen</button>
+        </div>
+        <p id="s-pool-meldung" class="leise" hidden></p>
+        <details id="s-schluessel-menue" class="menue">
+          <summary>Schlüssel im Einzelnen</summary>
+          <div id="s-liste-schluessel" class="liste"></div>
+        </details>
+      </details>
+
+      <details id="p-menue" class="menue">
+        <summary>Hintergrundläufe <span id="p-kurz" class="leise"></span></summary>
+        <div id="p-liste" class="liste"><p class="leer-klein">lädt …</p></div>
+      </details>
+
+      <details id="d-menue" class="menue">
+        <summary>Übersicht testen <span class="leise">Debug</span></summary>
+        <p class="leer-klein">Zeigt Testkarten auf der Übersicht, ohne etwas zu speichern oder zu senden — zum Ansehen,
+          wie es im Unterricht aussieht. „Vorschau beenden“ oder Neuladen räumt auf.</p>
+        <div class="knoepfe">
+          <button type="button" data-vorschau="unterricht">Im Unterricht</button>
+          <button type="button" data-vorschau="pause">Pause</button>
+          <button type="button" data-vorschau="freistunde">Freistunde</button>
+          <button type="button" data-vorschau="vor_schule">Vor der Schule</button>
+          <button type="button" data-vorschau="vertretung">Vertretung</button>
+          <button type="button" data-vorschau="stundenplan">Stundenplan-Karte</button>
+          <button type="button" data-vorschau="pc">PC-Karte</button>
+          <button type="button" data-vorschau="pc_frage">PC mit Rückfrage</button>
+          <button type="button" data-vorschau="jellyfin">Jellyfin-Karte</button>
+          <button type="button" data-vorschau="pcmedien">PC-Wiedergabe</button>
+          <button type="button" data-vorschau="bild">Bildkarte</button>
+          <button type="button" data-vorschau="minecraft">Minecraft</button>
+          <button type="button" data-vorschau="minecraft_menu">Minecraft (Menü)</button>
+          <button type="button" data-vorschau="route">Verbindungskarte</button>
+          <button type="button" data-vorschau="schultag">Schultag komplett</button>
+          <button type="button" class="weg" data-vorschau="aus">Vorschau beenden</button>
+        </div>
+      </details>
+
+      <dl class="werte">
+        <dt>HTTPS (fürs Mikrofon)</dt><dd id="w-https">—</dd>
+        <dt>Als App installiert</dt><dd id="w-app">—</dd>
+        <dt>Läuft gerade auf</dt><dd id="u-hier">wird erkannt …</dd>
+      </dl>
+
+      <div class="block">
+        <h2>Offene Sitzungen</h2>
+        <div id="u-sitzungen" class="liste"><p class="leer-klein">lädt …</p></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="installieren" class="hinweis" hidden>
+    Auf dem iPhone: <b>Teilen</b> → <b>Zum Home-Bildschirm</b>. Dann läuft Friday wie eine App.
+    <button id="hinweis-zu" aria-label="Hinweis schließen">×</button>
+  </div>
+
+  <!-- Rückfragen vom PC: auf jeder Seite, bis Eike entschieden hat (web/pc.js). -->
+  <div id="pc-karten" class="pc-karten" aria-live="polite" hidden></div>
+
+  <button id="halten" class="halten" type="button" hidden>Halten zum Sprechen</button>
+
+  <nav class="leiste">
+    <a href="#uebersicht">Übersicht</a>
+    <a href="#chat">Chat</a>
+    <a href="#gedaechtnis">Gedächtnis</a>
+    <a href="#schule">Bildung</a>
+    <a href="#studio">Extras</a>
+    <a href="#einstellungen">Mehr</a>
+  </nav>
+
+  <script src="/mathe.js"></script>
+  <script src="/app.js"></script>
+  <script src="/sprechen.js"></script>
+  <script src="/chat.js"></script>
+  <script src="/minecraft.js"></script>
+  <script src="/uebersicht.js"></script>
+  <script src="/gedaechtnis.js"></script>
+  <script src="/verlaeufe.js"></script>
+  <script src="/freigaben.js"></script>
+  <script src="/push.js"></script>
+  <script src="/benachrichtigungen.js"></script>
+  <script src="/briefing.js"></script>
+  <script src="/studio.js"></script>
+  <script src="/fahrgastrechte.js"></script>
+  <script src="/garantie.js"></script>
+  <script src="/hausaufgaben.js"></script>
+  <script src="/noten.js"></script>
+  <script src="/arbeiten.js"></script>
+  <script src="/lernen.js"></script>
+  <script src="/umgebung.js"></script>
+  <script src="/standort.js"></script>
+  <script src="/pc.js"></script>
+  <script src="/pcseite.js"></script>
+  <script src="/personen.js"></script>
+  <script src="/claude.js"></script>
+  <script src="/werkbank.js"></script>
+  <script src="/hphome.js"></script>
+  <script src="/snapmem.js"></script>
+  <script src="/kontakte.js"></script>
+  <script src="/medien.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Friday-Overlay (Windows-PC). Installiert durch installieren_overlay.ps1.
+vosk>=0.3.45
+sounddevice>=0.5
+numpy>=1.26
+websockets>=13
+PySide6>=6.7
